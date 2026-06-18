@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>No Vaccine, No Playbook: Ebola Bundibugyo and the Limits of Outbreak Response — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/007-ebola-bundibugyo-drc-response/">
+  <meta property="og:title" content="No Vaccine, No Playbook: Ebola Bundibugyo and the Limits of Outbreak Response">
+  <meta property="og:description" content="When WHO declared the DRC-Uganda Ebola outbreak a PHEIC in May 2026, responders faced an uncomfortable truth: for the Bundibugyo strain, there is no vaccine and no approved treatment. The response must work with older tools in one of the world's most difficult operating environments.">
+  <meta property="og:image" content="https://cdn.who.int/media/images/default-source/emergencies-and-disasters/2026---ebola-outbreak---drc/eboladrc2026_supplies2.jpg">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="The 2026 Ebola Bundibugyo outbreak in DRC and Uganda has no vaccine, no approved treatment. What this means for humanitarian health response — and what the funding architecture reveals about global preparedness gaps.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-deck {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  footer {
+    background: var(--ink);
+    color: var(--cream);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: #888; line-height: 1.6; }
+
+  @media (max-width: 640px) {
+    .article-page-headline { font-size: 1.7rem; }
+    main { padding: 1.5rem 1.2rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <div class="site-name">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/?filter=disaster">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/?filter=climate">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/?filter=field">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/?filter=law">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/?filter=health" class="active">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/?filter=capacity">Capacity &amp; Resources</a>
+  </nav>
+  </div>
+</header>
+
+<main>
+  <a class="back-link" href="/">← All Insights</a>
+
+  <span class="article-page-category">Health &amp; Displacement · DRC / Uganda</span>
+
+  <h1 class="article-page-headline">No Vaccine, No Playbook: Ebola Bundibugyo and the Limits of Outbreak Response</h1>
+
+  <p class="article-page-deck">When WHO declared the DRC-Uganda Ebola outbreak a global health emergency in May 2026, responders faced an uncomfortable truth: for the Bundibugyo strain, there is no vaccine and no approved treatment. The response must work with older tools — contact tracing, isolation, safe burials, community trust — in one of the world's most difficult operating environments.</p>
+
+  <div class="article-page-meta">
+    <span>By Ummanitarian Insight Editorial Team</span>
+    <span>·</span>
+    <span>June 16, 2026</span>
+    <span>·</span>
+    <span>8 min read</span>
+    <span>·</span>
+    <span>Health &amp; Displacement</span>
+  </div>
+
+  <img class="article-page-img"
+    src="https://cdn.who.int/media/images/default-source/emergencies-and-disasters/2026---ebola-outbreak---drc/eboladrc2026_supplies2.jpg"
+    alt="Emergency response supplies being deployed for the Ebola outbreak in the Democratic Republic of the Congo, 2026"
+  >
+  <p class="img-caption">Emergency response supplies being prepared for deployment in DRC, 2026. Photo: © WHO</p>
+
+  <div class="article-page-body">
+
+    <p>On the morning of May 17, 2026, the World Health Organization declared the epidemic of Ebola Bundibugyo virus disease in the Democratic Republic of the Congo and Uganda a Public Health Emergency of International Concern (PHEIC) — the organization's highest level of global health alarm. It was a declaration that put the world on notice, but it also revealed a hard structural problem: unlike the better-known Zaire strain of Ebola, for which effective vaccines now exist, the Bundibugyo species has no licensed vaccine and no specific approved treatment. In one of the most challenging humanitarian environments on earth, responders would have to rely on the oldest tools in outbreak control.</p>
+
+    <h2>A Different Kind of Ebola</h2>
+
+    <p>Ebola is not a single virus. It is a family of related filoviruses — Zaire, Sudan, Bundibugyo, Reston, Taï Forest — each with distinct characteristics, geographic histories, and crucially, different states of countermeasure development. When outbreaks struck West Africa in 2014 and DRC's North Kivu in 2018, the rVSV-ZEBOV vaccine (Ervebo) emerged as a transformative tool. By 2019, ring vaccination with Ervebo helped bring the second-largest Ebola outbreak in history under control in eastern DRC, demonstrating what a purpose-built vaccine can accomplish even in an active conflict zone.</p>
+
+    <p>Bundibugyo is a different equation. First identified in Uganda in 2007 and responsible for a small DRC outbreak in 2012, it is significantly less studied. No vaccine has completed efficacy trials for the strain. No antiviral therapy has demonstrated effectiveness in clinical settings for Bundibugyo-specific disease. As of June 2026, researchers at Imperial College London were tracking outbreak growth trajectories, and WHO's emergency scientific consultation convened on May 22 specifically to accelerate countermeasure R&amp;D for Bundibugyo. On June 12, the United States announced a commitment of $50 million to the Coalition for Epidemic Preparedness Innovations (CEPI) to fund laboratory studies, clinical trials, and manufacturing for Bundibugyo medical countermeasure candidates — but vaccine development timelines are measured in years, not weeks. The current outbreak will not wait.</p>
+
+    <h2>The Operating Environment</h2>
+
+    <p>The outbreak's geography compounds every operational challenge. Cases were confirmed in DRC's Ituri Province and spread cross-border into Uganda — a region marked by longstanding conflict, population displacement, and health systems stretched by years of underfunding and violence. The DRC has hosted more Ebola outbreaks than any other country, and each response has had to navigate the same combination of factors: insecurity limiting field team access, community mistrust accumulated across years of conflict, and dense population movement across a border that epidemiologically does not distinguish between DRC and Uganda.</p>
+
+    <p>By June 8, the International Medical Corps (IMC) had screened more than 6,300 individuals across 24 health facilities in DRC's Ituri Province, identifying 41 suspected Ebola cases for isolation. But identifying suspected cases is only the beginning. Surveillance reach in remote and densely populated areas is limited, and contact tracing — identifying everyone who may have had exposure to a confirmed case — requires community-level relationships that take time and trust to build.</p>
+
+    <p>UNICEF moved early to address the logistical baseline. By early June, the agency had delivered 150 metric tons of water, sanitation, and hygiene (WASH) and infection prevention and control (IPC) supplies to frontline health facilities in Bunia — enough to meet the immediate needs of approximately 100,000 people for six months. The World Food Programme expanded food assistance to Ebola patients, suspected cases, and health workers in Goma, extending targeted distribution to North Kivu's Beni Territory and South Kivu's capital Bukavu from May 31.</p>
+
+    <h2>When Classical Methods Are the Only Option</h2>
+
+    <p>Without a vaccine to anchor a ring vaccination strategy, the response defaults to the epidemiological methods that predate modern vaccinology. Contact tracing identifies exposure chains. Isolation separates cases from the general population before transmission can compound. Safe and dignified burial (SDB) teams address one of the highest-risk transmission events in Ebola outbreaks: funeral and burial practices that involve contact with the body of a deceased patient can amplify outbreak spread rapidly if not managed with care and community cooperation.</p>
+
+    <p>The IFRC and FHI 360 were operating fifteen SDB teams across DRC as of mid-June — seven IFRC teams and eight from FHI 360, with two additional FHI 360 teams coming online during the week of June 12. As of June 11, IFRC had conducted 200 safe and dignified burials. Critically, both organizations are engaging with local religious and community leaders to increase acceptance of safe burial practices — because technical capacity means little if communities are unwilling to engage with it. WHO's own framing of the response acknowledges the core reality: <strong>"it is only when communities are engaged in the response that such outbreaks are brought under control."</strong></p>
+
+    <p>Treatment center capacity is under pressure. Medair and IMC are supporting 100 health facilities across affected areas, including six specialized Ebola treatment units. As case counts grow, available treatment center bed capacity in Bunia and Nyankunde has emerged as a constraint, with work underway to establish additional facilities. Building Ebola treatment infrastructure in an active conflict zone is slow, expensive, and requires security conditions that can change without notice.</p>
+
+    <h2>The Funding Architecture</h2>
+
+    <p>The United States has committed more than $270 million in direct Ebola response funding, including the June 12 CEPI announcement of $50 million for Bundibugyo countermeasure development. This comes alongside $350 million in broader humanitarian assistance for DRC, South Sudan, and Uganda — part of a $1.8 billion U.S. contribution to the UN Office for the Coordination of Humanitarian Affairs announced in May. Implementing organizations — IMC, FHI 360, IFRC, Medair — are receiving resources for contact tracing, border and point-of-entry screening, clinic activation, and community education to counter misinformation about Ebola transmission.</p>
+
+    <p>The CEPI investment signals something important: an acknowledgment that the current response is operating without tools that should exist. Funding laboratory studies and clinical trials for Bundibugyo countermeasures now is the minimum necessary step to ensure that a future outbreak of this strain does not face the same structural gap. But it is a future investment. For the people in Ituri, Goma, Beni, Bukavu, and across the Uganda border today, the toolkit remains what it was when Bundibugyo first appeared in 2007.</p>
+
+    <h2>What the Gap Reveals</h2>
+
+    <p>The Bundibugyo outbreak is not the first time humanitarian health responders have found themselves without purpose-built medical countermeasures. It is, however, a sharp illustration of how the global health security architecture develops unevenly: vaccines and treatments cluster around strains that have caused the largest, most visible outbreaks. Variants outside that spotlight — less deadly in total numbers, less geographically spread, less covered by international media in their earlier appearances — face a slower road to countermeasure development. That gap becomes acutely visible the moment they appear in a population.</p>
+
+    <p>The response in DRC and Uganda is drawing on surveillance networks, SDB teams, WASH supplies, community health workers, treatment units, and cross-border coordination — the full infrastructure of a classical outbreak response. Whether that infrastructure is sufficient, in a conflict-affected region without a vaccine backstop, will be determined by the epidemiological trajectory over the coming weeks.</p>
+
+    <div class="source-box">
+      <strong>Sources</strong><br>
+      WHO Emergencies: <a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">Ebola outbreak — DRC 2026</a><br>
+      WHO statement, May 17, 2026: <a href="https://www.who.int/news/item/17-05-2026-epidemic-of-ebola-disease-in-the-democratic-republic-of-the-congo-and-uganda-determined-a-public-health-emergency-of-international-concern" target="_blank" rel="noopener">PHEIC declaration</a><br>
+      U.S. State Department, June 12, 2026: <a href="https://www.state.gov/releases/office-of-the-spokesperson/2026/06/ebola-response-update-june-12-2026/" target="_blank" rel="noopener">Ebola Response Update</a><br>
+      STAT News, May 17, 2026: <a href="https://www.statnews.com/2026/05/17/who-ebola-drc-uganda-bundibugyo-pheic-public-health-emergency/" target="_blank" rel="noopener">WHO declares Ebola outbreak a PHEIC</a><br>
+      Image: © WHO / Emergency Ebola response supplies, DRC 2026
+    </div>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Perspective</span>
+      <p>The Bundibugyo outbreak illustrates a recurring structural problem in global health preparedness: medical countermeasures are not developed in proportion to epidemiological risk, but in proportion to prior outbreak visibility. This means that responders arriving at a Bundibugyo outbreak in 2026 carry the same toolkit available in 2007 — surveillance, isolation, and safe burials — while the Zaire countermeasure library has expanded significantly over the same period. The $50M CEPI commitment is a necessary first step, but the window for that investment to benefit the current outbreak has almost certainly closed before trials could complete. What it might accomplish is ensuring that the next Bundibugyo outbreak faces a different response architecture than this one.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-text">
+    © 2026 Ummanitarian / IHSC · Ummanitarian Insight · insight.ummanitarian.org<br>
+    Humanitarian knowledge, plainly told. · <a href="/" style="color:#888;">← Back to all insights</a>
+  </div>
+</footer>
+
+</body>
+</html>
