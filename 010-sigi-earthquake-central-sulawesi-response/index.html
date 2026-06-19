@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>After 703 Aftershocks: Inside Sigi's Emergency Response to Central Sulawesi's M6.7 Earthquake — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/010-sigi-earthquake-central-sulawesi-response/">
+  <meta property="og:title" content="After 703 Aftershocks: Inside Sigi's Emergency Response to Central Sulawesi's M6.7 Earthquake">
+  <meta property="og:description" content="A M6.7 earthquake struck Central Sulawesi on June 16, 2026, killing three and displacing more than 6,400 people across Sigi and surrounding regencies. With 703 aftershocks and critical infrastructure damaged, Indonesia's emergency response machinery is racing to keep up.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1677233861362-c3aa97f11638?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="Three dead, 6,400 people displaced, 1,652 homes damaged — and 703 aftershocks still counting. Inside Indonesia's disaster response to the June 2026 Central Sulawesi earthquake.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.18;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  footer {
+    background: var(--cream-dark);
+    border-top: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); line-height: 1.6; }
+
+  @media (max-width: 600px) {
+    .article-page-headline { font-size: 1.7rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <a href="/" class="site-name" style="text-decoration:none;color:inherit;">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </a>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all" class="active">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Capacity &amp; Resources</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-about">About</a>
+  </nav>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<main class="article-page">
+  <a class="back-link" href="/">← Back to Insight</a>
+
+  <span class="article-page-category">Disaster Response · Central Sulawesi</span>
+
+  <h1 class="article-page-headline">After 703 Aftershocks: Inside Sigi's Emergency Response to Central Sulawesi's M6.7 Earthquake</h1>
+
+  <div class="article-page-meta">
+    <span>Ummanitarian Insight</span>
+    <span>·</span>
+    <span>June 2026</span>
+    <span>·</span>
+    <span>7 min read</span>
+    <span>·</span>
+    <span style="color:var(--red)">Disaster Response</span>
+  </div>
+
+  <img class="article-page-img"
+    src="https://images.unsplash.com/photo-1677233861362-c3aa97f11638?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0"
+    alt="Earthquake damage — collapsed buildings and rubble following a major seismic event"
+  >
+  <p class="img-caption">Photo by Çağlar Oskay on Unsplash. Earthquake aftermath, Iskenderun, Turkey (February 2023). Used for illustrative purposes.</p>
+
+  <div class="article-page-body">
+
+    <p>The ground in Sigi regency had barely stilled when the numbers began arriving. Within 24 hours of the magnitude 6.7 earthquake that struck Central Sulawesi at 11:27 WITA on Tuesday, June 16, 2026, Indonesia's National Disaster Management Agency (BNPB) was already tracking 703 aftershocks — 25 of which remained strong enough to be felt by residents still picking through the wreckage of their homes.</p>
+
+    <p>For Sigi, a regency of mountain villages and river settlements in the interior of Sulawesi Tengah, this is not the first time the earth has moved violently. This is the same province devastated by the catastrophic M7.5 earthquake and tsunami of September 2018 — an event that killed more than 4,400 people, displaced 170,000, and remains one of Indonesia's deadliest modern disasters. That history is not merely backdrop. It shapes how this response is being managed, what communities fear, and how long the recovery will actually take.</p>
+
+    <h2>What Happened on June 16</h2>
+
+    <p>A tectonic earthquake struck Kabupaten Parigi Moutong — approximately 42 kilometres southeast of Palu — at a depth of just 10 kilometres. BMKG, Indonesia's meteorological and geophysical agency, confirmed there was no tsunami threat, a critical early message given the province's 2018 trauma. But shallow focal depth amplified ground shaking across a wide arc: communities in Palu, Sigi, Donggala, Tojo Una-Una, and Parigi Moutong all reported strong motion. Hospitals in Palu conducted precautionary evacuations while continuing essential services. Buildings across the region were inspected for structural integrity before residents were permitted to re-enter.</p>
+
+    <p>By June 17, initial figures showed dozens injured and hundreds of households displaced. By June 18 — when BNPB's most recent consolidated report was issued — the scope had broadened significantly: <strong>3 people confirmed dead</strong> (two in Desa Ampera, Kecamatan Palolo; one in Desa Kamarora A, Kecamatan Nokilalaki, both in Sigi); <strong>17 serious injuries</strong>; <strong>91 minor injuries</strong>; and <strong>2,109 households — or 6,412 people — affected</strong>. Damage assessment teams were still in the field.</p>
+
+    <h2>Sigi: The Regency at the Centre</h2>
+
+    <p>Of all affected areas, Sigi bore the heaviest toll. The regency accounts for the great majority of casualties and nearly all structural damage: <strong>1,652 homes damaged</strong> across three severity categories — 1,472 with minor damage, 111 with moderate damage, and 69 severely damaged. Beyond homes, the earthquake struck 42 places of worship, 13 school buildings, 8 government offices (including the Bupati Sigi's administrative offices and BAPPERINDA), 2 traditional community houses, and 8 water supply networks.</p>
+
+    <p>That final category — water networks — deserves more attention than it typically receives in early disaster reporting. When water infrastructure is disrupted, it creates cascading risks: increased burden on women and children for water collection, higher risk of waterborne disease, and greater strain on any functional health services in the area. Eight damaged water systems in a regency already conducting emergency assessments is not a minor footnote. It is a timeline problem that will outlast the 14-day emergency status by months.</p>
+
+    <p>The Regent of Sigi moved quickly to formalise the response structure: a 14-day Emergency Response Status was declared from the date of the earthquake, with the Deputy Regent appointed as Commander of the Emergency Response Task Force. A coordination post was activated at Desa Maku using the existing Pusdalops (operations centre) facilities of BPBD Sigi — a pragmatic choice given that 8 government buildings in the regency sustained damage, including offices that might otherwise serve coordination functions. By June 18, Central Sulawesi Province was processing a provincial-level emergency declaration.</p>
+
+    <h2>The Response Machinery</h2>
+
+    <p>BNPB's Quick Reaction Team — led by two senior officials from the Emergency Response Deputy — reached Sigi within hours of the earthquake, bringing initial logistics. By June 18, the agency had distributed: 3 refugee tents, 50 family tents, 150 food packages, 150 mattresses, 150 blankets, and 100 folding beds. TNI (Indonesian Armed Forces) and Polri (National Police) personnel were deployed for rubble clearance, logistics distribution, and on-the-ground operational support.</p>
+
+    <p>BNPB head Letjen TNI Dr. Suharyanto, S.Sos., M.M. was scheduled to travel directly to Sigi on June 19 — the same day this article was published. His presence at the site is not incidental. In Indonesia's decentralised disaster management system, where BNPB's role is to support and coordinate rather than replace local BPBD capacity, a high-level national visit signals resource mobilisation priority and accelerates inter-agency alignment. It also provides a form of accountability: what the head of BNPB sees firsthand shapes what gets escalated to the national government.</p>
+
+    <h2>What the Numbers Don't Capture</h2>
+
+    <p>With 703 aftershocks recorded by June 18 — the largest reaching M5.2, with 25 still being felt by residents — the earthquake is not simply an event in the past. It is an ongoing experience. Communities cannot safely re-enter damaged buildings, BNPB has warned, until structural assessments are completed. Families displaced to tents or open ground are experiencing each tremor as a renewed threat, compounding the psychological stress of displacement alongside the physical disruption.</p>
+
+    <p>BMKG's monitoring suggests aftershock magnitude is gradually declining, but activity remains elevated. In this environment, the "urgent needs" flagged by BNPB as of June 18 read as a practical checklist of what trauma looks like in physical form: additional refugee and family tents, clean water, blankets, mattresses, emergency lighting, health services, and rubble clearance support. None of these are sophisticated interventions. All of them represent the gap between where people are and where they need to be before anything longer-term can begin.</p>
+
+    <h2>A Recovery That Was Never Complete</h2>
+
+    <p>This is not the first emergency layered onto Central Sulawesi's recent history. The 2018 Palu earthquake and tsunami triggered international humanitarian response and substantial reconstruction funding — but the reconstruction process was slow, contested in some communities, and in several areas still incomplete when this new earthquake struck. Some of the structures now described in damage assessments were in areas already in recovery mode from 2018.</p>
+
+    <p>This pattern — compounding events in regions of high seismic risk and limited economic depth — is not unique to Central Sulawesi. But it raises a structural question that stretches beyond any individual response: how does a region build resilience when recovery timelines routinely outlast the political attention cycle? The 14-day emergency status in Sigi will end. The water networks, schools, and mosques will require months or years to rebuild properly. The families sleeping in tents tonight will need sustained support long after the Quick Reaction Team withdraws.</p>
+
+    <p>By regional disaster standards, the June 2026 Sigi earthquake is a mid-scale event. Three deaths, over 6,400 people displaced, more than 1,600 homes damaged. But mid-scale events in contexts of accumulated vulnerability are how resilience deficits compound. Indonesia's disaster response machinery — BNPB, BPBD, TNI, Polri — has engaged quickly and with clear command structure. The harder question is what happens in month three, when tents become a semi-permanent reality, when the water networks still haven't been fixed, and when the next news cycle has moved on.</p>
+
+    <div class="source-box">
+      <strong>Primary Sources</strong><br>
+      BNPB (Badan Nasional Penanggulangan Bencana): <a href="https://www.bnpb.go.id/berita/korban-meninggal-gempa-m67-di-sigi-tiga-orang-kepala-bnpb-pastikan-tanggap-darurat-efektif" target="_blank" rel="noopener">Korban Meninggal Gempa M6,7 di Sigi Tiga Orang (18 Juni 2026)</a>; <a href="https://www.bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-indonesia-per-17-juni-2026" target="_blank" rel="noopener">Perkembangan Situasi per 17 Juni 2026</a><br><br>
+      ReliefWeb / OCHA: <a href="https://reliefweb.int/report/indonesia/flash-update-no-1-m67-earthquake-palu-central-sulawesi-16-june-2026" target="_blank" rel="noopener">Flash Update No. 1 — M6.7 Earthquake, Palu, Central Sulawesi (16 June 2026)</a><br><br>
+      BMKG: Official aftershock monitoring data referenced in BNPB June 18 report.
+    </div>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Perspective</span>
+      <p>Disaster response in Indonesia is technically proficient at activation — BNPB moves quickly, command structures are established, logistics flow. The persistent challenge is duration: sustaining response quality past the first 14 days, through the transition from emergency to early recovery, without losing momentum or data continuity. Sigi's water networks, school buildings, and displaced families are not a two-week problem. The structures that will determine outcomes over the next six months are already under strain. That is where the real test of Indonesia's disaster management maturity lies.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">
+    <strong style="color:var(--ink);">Ummanitarian Insight</strong> — Humanitarian knowledge, plainly told.<br>
+    A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian / IHSC</a>. Follow us: <a href="https://instagram.com/ummanitarian_" style="color:var(--red);">@ummanitarian_</a>
+  </div>
+</footer>
+
+</body>
+</html>
