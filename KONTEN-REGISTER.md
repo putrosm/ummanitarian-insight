@@ -17,6 +17,5 @@
 | 009 | yemen-hunger-funding-crisis | Fifteen Per Cent: Yemen's Hunger Crisis and the Aid That Never Arrived | Jun 2026 | Internal (article-card) | Claude |
 | 010 | sigi-earthquake-central-sulawesi-response | After 703 Aftershocks: Inside Sigi's Emergency Response to Central Sulawesi's M6.7 Earthquake | Jun 2026 | Internal (article-card) | Claude |
 | 011 | gaza-resiliensi-kamal-putra-pratama | Gaza: While the World Counts the Dead, They Count Reasons to Keep Living | Jun 2026 | Guest (article-card) | Kamal Putra Pratama |
-| 012 | aceh-barat-flood-local-disaster-response | 130 Homes, 30 Hours: Aceh Barat's Flood and the Machinery Nobody Notices | Jun 2026 | Internal (hero aktif) | Claude |
-
-**Next avai
+| 012 | aceh-barat-flood-local-disaster-response | 130 Homes, 30 Hours: Aceh Barat's Flood and the Machinery Nobody Notices | Jun 2026 | Internal (article-card) | Claude |
+| 013 | ir
