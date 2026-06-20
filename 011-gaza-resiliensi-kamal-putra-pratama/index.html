@@ -209,6 +209,34 @@
 
   .source-box a { color: var(--red); text-decoration: underline; }
 
+  .id-summary {
+    margin: 1.5rem 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--cream-dark);
+  }
+  .id-summary summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 0.8rem 1.2rem;
+  }
+  .id-summary summary::-webkit-details-marker { display: none; }
+  .id-summary summary::after { content: " ▾"; }
+  .id-summary[open] summary::after { content: " ▴"; }
+  .id-summary p {
+    padding: 0 1.2rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-mid);
+  }
+
   .ummanitarian-perspective {
     border-top: 2px solid var(--ink);
     padding-top: 1.4rem;
@@ -343,15 +371,6 @@
       <p>Kamal Putra Pratama is a guest contributor to Ummanitarian Insight. He is known as a humanitarian medical volunteer who has served directly in the Gaza Strip, as reported by Media Indonesia. This essay was written from his personal observations and experience in the field, and is published as a contributor's perspective — not an editorial report by Ummanitarian Insight.</p>
     </div>
 
-    <div class="source-box">
-      <strong>Indonesian Summary:</strong> Esai ini membahas resiliensi masyarakat Gaza di tengah konflik berkepanjangan — bagaimana solidaritas komunitas, harapan, dan keteguhan menjadi cara mereka bertahan ketika institusi runtuh dan dunia hanya memandang mereka lewat angka-angka korban. Ditulis oleh Kamal Putra Pratama, relawan medis kemanusiaan yang pernah bertugas di Jalur Gaza.
-    </div>
-
-  </div>
-</main>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-text">
-    <strong style="color:var(--ink);">Ummanitarian Insight</strong> — Humanitarian knowledge, plainly told.<br>
-    A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian</a>. Follow us: <a href="https://instagram.com/ummanitarian_" style="color:
+    <details class="id-summary">
+      <summary>Indonesian Summary</summary>
+   
