@@ -152,9 +152,9 @@
   <div class="ticker-label">Latest</div>
   <div class="ticker-track">
   <div class="ticker-scroll">
-    <span>&#9632;&nbsp; Ummanitarian Insight: Gaza — Ketika Dunia Menghitung Korban, Mereka Menghitung Alasan untuk Tetap Hidup, esai kontributor tamu Kamal Putra Pratama</span>
+    <span>&#9632;&nbsp; Ummanitarian Insight: Gaza — While the World Counts the Dead, They Count Reasons to Keep Living, a guest essay by Kamal Putra Pratama</span>
     <span>&#9632;&nbsp; Ummanitarian Insight: After 703 Aftershocks — M6.7 earthquake strikes Central Sulawesi, Sigi regency hardest hit with 6,400+ displaced</span>
-    <span>&#9632;&nbsp; Ummanitarian Insight: Gaza — Ketika Dunia Menghitung Korban, Mereka Menghitung Alasan untuk Tetap Hidup, esai kontributor tamu Kamal Putra Pratama</span>
+    <span>&#9632;&nbsp; Ummanitarian Insight: Gaza — While the World Counts the Dead, They Count Reasons to Keep Living, a guest essay by Kamal Putra Pratama</span>
     <span>&#9632;&nbsp; Ummanitarian Insight: After 703 Aftershocks — M6.7 earthquake strikes Central Sulawesi, Sigi regency hardest hit with 6,400+ displaced</span>
     <span>&#9632;&nbsp; Ummanitarian Insight: When Aid Withdraws — NGO operations suspended in South Sudan’s Jonglei, malnutrition at 30% as famine closes in</span>
     <span>&#9632;&nbsp; Ummanitarian Insight: One Drop of Humanity — what World Blood Donor Day reveals about Indonesia’s disaster blood supply gap</span>
@@ -261,7 +261,7 @@
       <img class="article-card-img" src="/011-gaza-resiliensi-kamal-putra-pratama/og-image.jpg" alt="A person standing among rubble in Gaza beside a mural reading 'Stop The War'">
       <span class="card-category">Health &amp; Displacement &middot; Gaza</span>
       <a href="/011-gaza-resiliensi-kamal-putra-pratama/" style="text-decoration:none;color:inherit;">
-        <h2 class="card-headline" style="cursor:pointer;">Gaza: Ketika Dunia Menghitung Korban, Mereka Menghitung Alasan untuk Tetap Hidup</h2>
+        <h2 class="card-headline" style="cursor:pointer;">Gaza: While the World Counts the Dead, They Count Reasons to Keep Living</h2>
       </a>
       <a class="card-read-more" href="/011-gaza-resiliensi-kamal-putra-pratama/">Read insight &rarr;</a>
       <p class="card-deck">A guest essay by Kamal Putra Pratama, a humanitarian medical volunteer who has served in Gaza, on what resilience really means for a population the world mostly sees through casualty counts.</p>
@@ -510,4 +510,5 @@
       heroMain.style.display = 'none';
       heroSidebar.style.display = 'none';
     }
-    miniCards.forEach(function(c) { c.style.display = (cat==='all'||c.dataset.ca
+    miniCards.forEach(function(c) { c.style.display = (cat==='all'||c.dataset.category===cat)?'':'none'; });
+    a
