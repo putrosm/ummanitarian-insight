@@ -191,24 +191,24 @@
        ============================================================ -->
   <!-- HERO START -->
   <div class="hero">
-    <div class="hero-main" data-category="health">
+    <div class="hero-main" data-category="disaster">
       <img class="hero-img"
-        src="/011-gaza-resiliensi-kamal-putra-pratama/og-image.jpg"
-        alt="A person standing among rubble in Gaza beside a mural reading 'Stop The War'"
+        src="https://images.unsplash.com/photo-1741081288260-877057e3fa27?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0"
+        alt="Rescue team evacuating residents by inflatable boat through floodwaters in Indonesia"
       >
-      <span class="hero-category">Health &amp; Displacement &middot; Gaza</span>
-      <a href="/011-gaza-resiliensi-kamal-putra-pratama/" style="text-decoration:none;color:inherit;">
-        <h1 class="hero-headline" style="cursor:pointer;">Gaza: Ketika Dunia Menghitung Korban, Mereka Menghitung Alasan untuk Tetap Hidup</h1>
+      <span class="hero-category">Disaster Response &middot; West Aceh, Indonesia</span>
+      <a href="/012-aceh-barat-flood-local-disaster-response/" style="text-decoration:none;color:inherit;">
+        <h1 class="hero-headline" style="cursor:pointer;">130 Homes, 30 Hours: Aceh Barat's Flood and the Machinery Nobody Notices</h1>
       </a>
-      <p class="hero-deck">A guest essay by Kamal Putra Pratama, a humanitarian medical volunteer who has served in Gaza, on what resilience really means for a population the world mostly sees through casualty counts.</p>
+      <p class="hero-deck">A river overflowed in West Aceh on June 15, flooding 130 homes and displacing 300 people. By the next day the water had receded — but the response reveals how Indonesia's disaster system actually works most weeks.</p>
       <div class="hero-meta">
-        <span class="meta-author">By Kamal Putra Pratama</span>
+        <span class="meta-author">By Ummanitarian Insight Editorial Team</span>
         <span>&middot;</span>
         <span>June 2026</span>
         <span>&middot;</span>
-        <span>4 min read</span>
+        <span>5 min read</span>
       </div>
-      <a class="read-more" href="/011-gaza-resiliensi-kamal-putra-pratama/">Read full article &rarr;</a>
+      <a class="read-more" href="/012-aceh-barat-flood-local-disaster-response/">Read full article &rarr;</a>
     </div>
     <aside class="hero-sidebar">
       <div class="sidebar-title">Also in This Issue</div>
@@ -256,6 +256,18 @@
        ============================================================ -->
   <!-- ARTICLE GRID -->
   <div class="articles-grid">
+    <!-- Ex-hero: Gaza Resiliensi — Kamal Putra Pratama (guest) -->
+    <article class="article-card" data-category="health">
+      <img class="article-card-img" src="/011-gaza-resiliensi-kamal-putra-pratama/og-image.jpg" alt="A person standing among rubble in Gaza beside a mural reading 'Stop The War'">
+      <span class="card-category">Health &amp; Displacement &middot; Gaza</span>
+      <a href="/011-gaza-resiliensi-kamal-putra-pratama/" style="text-decoration:none;color:inherit;">
+        <h2 class="card-headline" style="cursor:pointer;">Gaza: Ketika Dunia Menghitung Korban, Mereka Menghitung Alasan untuk Tetap Hidup</h2>
+      </a>
+      <a class="card-read-more" href="/011-gaza-resiliensi-kamal-putra-pratama/">Read insight &rarr;</a>
+      <p class="card-deck">A guest essay by Kamal Putra Pratama, a humanitarian medical volunteer who has served in Gaza, on what resilience really means for a population the world mostly sees through casualty counts.</p>
+      <div class="card-meta">June 2026 &middot; Kamal Putra Pratama</div>
+    </article>
+
     <!-- Ex-hero: After 703 Aftershocks — Sigi Earthquake Central Sulawesi -->
     <article class="article-card" data-category="disaster">
       <img class="article-card-img" src="https://images.unsplash.com/photo-1677233861362-c3aa97f11638?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Earthquake damage — collapsed buildings and rubble following a major seismic event">
@@ -498,40 +510,4 @@
       heroMain.style.display = 'none';
       heroSidebar.style.display = 'none';
     }
-    miniCards.forEach(function(c) { c.style.display = (cat==='all'||c.dataset.category===cat)?'':'none'; });
-    articleCards.forEach(function(c) { c.style.display = (cat==='all'||c.dataset.category===cat)?'':'none'; });
-    navLinks.forEach(function(a) { a.classList.remove('active'); });
-    document.querySelector('nav a[data-filter="'+cat+'"]').classList.add('active');
-  }
-
-  navLinks.forEach(function(link) {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      var cat = this.dataset.filter;
-      filterAll(cat);
-      var scrollMap = {
-        'law': 'section-law-card',
-        'disaster': 'section-disaster',
-        'climate': 'section-climate-card',
-        'health': 'section-health-card',
-        'capacity': 'section-all',
-        'field': 'section-field'
-      };
-      if (scrollMap[cat]) {
-        setTimeout(function() {
-          var el = document.getElementById(scrollMap[cat]);
-          if (el) el.scrollIntoView({behavior:'smooth'});
-        }, 50);
-      }
-    });
-  });
-
-  document.querySelector('nav a[href="#section-about"]').addEventListener('click', function(e) {
-    e.preventDefault();
-    document.getElementById('section-about').scrollIntoView({behavior:'smooth'});
-  });
-})();
-</script>
-
-</body>
-</html>
+    miniCards.forEach(function(c) { c.style.display = (cat==='all'||c.dataset.ca
