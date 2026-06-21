@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/014-nduta-camp-closure-burundian-refugees/">
+  <meta property="og:title" content="Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists">
+  <meta property="og:description" content="An international medical charity has ended a decade of medical care in Tanzania's Nduta refugee camp. The camp itself closed in April amid allegations of coerced repatriation — and the last camp still standing is set to close next.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1677682693111-c7c6a60c362a?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="An international medical charity closed a decade-long medical program in Nduta, Tanzania after the refugee camp itself was shut down by government order. Rights groups allege coerced repatriation of Burundian refugees, and the country's last remaining camp is set to close June 30.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-deck {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body p:first-of-type {
+    font-size: 1.08rem;
+    color: var(--ink-mid);
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+  .article-page-body em { font-style: italic; }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  .id-summary {
+    margin: 1.5rem 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--cream-dark);
+  }
+  .id-summary summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 0.8rem 1.2rem;
+  }
+  .id-summary summary::-webkit-details-marker { display: none; }
+  .id-summary summary::after { content: " \25BE"; }
+  .id-summary[open] summary::after { content: " \25B4"; }
+  .id-summary p {
+    padding: 0 1.2rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-mid);
+  }
+
+  footer {
+    background: var(--cream-dark);
+    border-top: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); line-height: 1.6; }
+
+  @media (max-width: 600px) {
+    .article-page-headline { font-size: 1.6rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <a href="/" class="site-name" style="text-decoration:none;color:inherit;">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </a>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all" class="active">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Capacity &amp; Resources</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-about">About</a>
+  </nav>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<main class="article-page">
+  <a class="back-link" href="/">← Back to Insight</a>
+
+  <span class="article-page-category">Health &amp; Displacement · Tanzania</span>
+
+  <h1 class="article-page-headline">Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists</h1>
+
+  <p class="article-page-deck">An international medical charity has wound down a decade of medical care in Tanzania's Nduta refugee camp. The closure was not a planning decision by the organization — it followed the camp's own shutdown by government order, amid allegations that thousands of Burundian refugees were coerced into returning to the country they fled.</p>
+
+  <div class="article-page-meta">
+    <span>By Ummanitarian Insight Editorial Team</span>
+    <span>·</span>
+    <span>June 2026</span>
+    <span>·</span>
+    <span>7 min read</span>
+    <span>·</span>
+    <span style="color:var(--red)">Health &amp; Displacement</span>
+  </div>
+
+  <img class="article-page-img"
+    src="https://images.unsplash.com/photo-1677682693111-c7c6a60c362a?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0"
+    alt="A mother holds her baby on a hospital bed in Africa"
+  >
+  <p class="img-caption">Maternal and child care was a cornerstone of the decade-long medical program in Nduta — the kind of routine, sustained care that disappears when a camp closes faster than a health system can absorb the need.</p>
+
+  <div class="article-page-body">
+
+    <p>On June 17, 2026, an international medical humanitarian organization announced it was ending medical activities in Kibondo district, Tanzania, after more than ten years of running the main hospital and health services for Nduta refugee camp. It did not choose the timing. The camp itself had already been shut down by the Tanzanian government seven weeks earlier, on April 30, and there was no longer a population left in Nduta for it to serve.</p>
+
+    <p>The announcement closes one of the organization's longer-running medical operations. It also lands at an uncomfortable moment: human rights monitors and refugees who lived through the camp's final weeks say the closure was not the orderly, voluntary process Tanzanian and UN officials describe.</p>
+
+    <h2>A Decade in Numbers</h2>
+
+    <p>The organization launched operations in Nduta in 2015, after thousands of Burundians fled a political crisis at home. Over the following decade, its teams delivered more than 1.6 million outpatient consultations and admitted over 100,000 patients to the camp's hospital, with a particular focus on maternal and child health — antenatal care, safe deliveries, postnatal follow-up — alongside emergency response to recurring outbreaks of malaria, cholera, and measles. "Investing in the health of mothers and children has been a cornerstone of our work," said Serviour Dombojena, the project coordinator in Nduta, in the organization's closure statement. It says it worked throughout alongside Tanzania's Ministry of Health and trained national staff, with the explicit goal of leaving behind a stronger local health system once the camp eventually closed.</p>
+
+    <h2>How the Camp Disappeared</h2>
+
+    <p>That handover happened on a government timeline, not a humanitarian one. The closure followed a tripartite agreement between Tanzania, Burundi, and UNHCR aimed at "voluntary" repatriation of Burundian refugees — part of a plan to return roughly 100,000 people by June 2026. Tanzania's Interior Minister, Patrobas Katambi, formally closed Nduta on April 30, handing its infrastructure to the government for other uses. Burundian human rights monitors, including the Coalition for Human Rights/Living in Refugee Camps (CDH/VICAR), described a different process: refugees facing months of "increasingly coercive measures" — restricted movement, demolished homes, aid tied to repatriation registration, night raids and arrests — culminating in a surge of departures and the camp's sudden, complete emptying. According to Burundian outlet SOS Médias Burundi, nearly 15,000 people were repatriated in three days, in conditions several described as inhumane, with the last convoy leaving Nduta before dawn.</p>
+
+    <p>UNHCR's position has been more guarded than either account. A spokesperson told AFP the agency had "consistently raised concerns with the authorities whenever reports of pressure or abuse emerged," while maintaining that the framework agreement calls for returns to be voluntary, safe, and dignified. The agency has separately acknowledged shortcomings in how the tripartite plan was carried out, including concern over home demolitions, but has not taken concrete steps to halt the pace of returns.</p>
+
+    <h2>Where the Need Went</h2>
+
+    <p>Roughly 198 families out of a camp that once held more than 50,000 people were selected to transfer to Nyarugusu, Tanzania's other Burundian refugee camp, on the grounds that they still required international protection. Refugees and rights groups have called the selection process opaque, and some accounts allege manipulation of the lists in favor of people connected to the Burundian and Tanzanian governments. Nyarugusu is itself scheduled to close by June 30, 2026, leaving roughly 22,000 remaining Burundian refugees facing the same uncertainty Nduta's population faced months ago. Burundian rights organizations say returnees have already reported being monitored and targeted after arrival by the Imbonerakure, the ruling party's youth wing, with some fleeing the country again. They argue mass, accelerated repatriation under pressure risks violating the principle of non-refoulement under the 1951 Refugee Convention — the rule that protection cannot lawfully be withdrawn by sending someone back into danger, however the paperwork describes the process.</p>
+
+    <h2>The Pattern Repeats</h2>
+
+    <p>The organization says it remains present in Tanzania with other medical projects and that it hopes its decade of investment in Kibondo's district health system will continue to benefit both the host community and any refugees who remain. But the Nduta case illustrates a structural mismatch that is becoming familiar across protracted displacement settings: health systems built over a decade can be dismantled in weeks once a government decides a camp's political usefulness has expired, regardless of whether the underlying protection needs of the people inside it have actually been resolved. The hospital outlasted the unrest that built it. It did not outlast the closure order.</p>
+
+    <div class="source-box">
+      <strong>Sources</strong><br>
+      Official closure statement, June 17, 2026: <a href="https://www.msf.org/msf-concludes-medical-support-nduta-refugee-camp" target="_blank" rel="noopener">Concluding more than 10 years of medical support in Nduta refugee camp</a><br>
+      Africanews/AFP, May 2, 2026: <a href="https://www.africanews.com/2026/05/02/tanzania-shuts-camp-housing-thousands-of-burundi-refugees/" target="_blank" rel="noopener">Tanzania shuts camp housing thousands of Burundi refugees</a><br>
+      SOS Médias Burundi, May 1, 2026: <a href="https://www.sosmediasburundi.org/en/2026/05/01/tanzania-nduta-camp-permanently-closed/" target="_blank" rel="noopener">Tanzania: Nduta camp permanently closed</a><br>
+      Image: Unsplash License — free to use, no attribution required.
+    </div>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Perspective</span>
+      <p>A decade of 1.6 million consultations is the kind of number humanitarian organizations cite to show durability and trust built with a community over years. It is also, in this case, a measure of how much can be lost almost overnight when the camp that housed that trust is closed on a government's schedule rather than a protection timeline. The gap between the medical charity's careful, decade-long handover language and CDH/VICAR's account of demolished homes and night raids is not just a dispute about facts — it is a dispute about who gets to decide when displacement has ended. Nyarugusu's scheduled closure on June 30 means this same argument is about to happen again, for 22,000 more people, within two weeks.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">
+    <strong style="color:var(--ink);">Ummanitarian Insight</strong> — Humanitarian knowledge, plainly told.<br>
+    A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian</a>.
