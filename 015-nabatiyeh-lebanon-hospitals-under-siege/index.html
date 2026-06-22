@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/015-nabatiyeh-lebanon-hospitals-under-siege/">
+  <meta property="og:title" content="62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege">
+  <meta property="og:description" content="On June 19, a single hospital in southern Lebanon took in 25 dead and 37 wounded within hours. It is one entry in a WHO tally of 147 documented attacks on Lebanese healthcare since March.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1758653500534-a47f6cd8abb0?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="MSF and WHO document 147 attacks on healthcare in Lebanon since March, including a June 19 mass-casualty event in Nabatiyeh. Hospital staff have slept inside their wards for over six weeks.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-deck {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body p:first-of-type {
+    font-size: 1.08rem;
+    color: var(--ink-mid);
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+  .article-page-body em { font-style: italic; }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  .id-summary {
+    margin: 1.5rem 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--cream-dark);
+  }
+  .id-summary summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 0.8rem 1.2rem;
+  }
+  .id-summary summary::-webkit-details-marker { display: none; }
+  .id-summary summary::after { content: " \25BE"; }
+  .id-summary[open] summary::after { content: " \25B4"; }
+  .id-summary p {
+    padding: 0 1.2rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-mid);
+  }
+
+  footer {
+    background: var(--cream-dark);
+    border-top: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); line-height: 1.6; }
+
+  @media (max-width: 600px) {
+    .article-page-headline { font-size: 1.6rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <a href="/" class="site-name" style="text-decoration:none;color:inherit;">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </a>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all" class="active">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Capacity &amp; Resources</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-about">About</a>
+  </nav>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<main class="article-page">
+  <a class="back-link" href="/">← Back to Insight</a>
+
+  <span class="article-page-category">Health &amp; Displacement · Southern Lebanon</span>
+
+  <h1 class="article-page-headline">62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege</h1>
+
+  <p class="article-page-deck">On June 19, a single hospital in southern Lebanon took in 25 dead and 37 wounded within hours. It is one entry in a WHO tally of 147 documented attacks on Lebanese healthcare since March — and the doctors treating the wounded have not left the building in weeks.</p>
+
+  <div class="article-page-meta">
+    <span>By Ummanitarian Insight Editorial Team</span>
+    <span>·</span>
+    <span>June 2026</span>
+    <span>·</span>
+    <span>6 min read</span>
+    <span>·</span>
+    <span style="color:var(--red)">Health &amp; Displacement</span>
+  </div>
+
+  <img class="article-page-img"
+    src="https://images.unsplash.com/photo-1758653500534-a47f6cd8abb0?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0"
+    alt="Medical staff transporting a patient on a stretcher down a hospital corridor"
+  >
+  <p class="img-caption">Hospital staff transport a patient down a corridor — a scene MSF says has repeated nightly at hospitals across southern Lebanon since the bombardment of Nabatiyeh resumed.</p>
+
+  <div class="article-page-body">
+
+    <p>Since the morning of June 19, doctors at Najdeh Al-Shaabiyeh hospital in Nabatiyeh, southern Lebanon, had taken in 25 dead and 37 wounded, many in critical condition, before the day was half over. "Our team is responding to an influx of patients of all ages, including paramedics wounded during rescue missions," said Pierre Boulet-Desbareau, an emergency coordinator with Médecins Sans Frontières (MSF), describing people arriving with severe head injuries, heavy bleeding, shrapnel wounds, and traumatic amputations, while others remained trapped under rubble as bombardment continued. Lebanon's Ministry of Public Health put the toll across Nabatiyeh governorate at more than 50 killed and at least 97 wounded that day alone, with the number rising by the hour.</p>
+
+    <p>The attacks landed despite a ceasefire that has technically been in place since the war's last major escalation. Lebanese media and first responders counted at least 27 people killed and 26 wounded in strikes on the Nabatiyeh region the same weekend, with Israeli aircraft, drones, and artillery hitting residential buildings before dawn. Across the wider 48-hour window, Lebanon's health ministry reported 83 people killed and 141 wounded nationwide, most of them in the south — a level of violence aid workers say has made the word "ceasefire" a formality rather than a fact on the ground.</p>
+
+    <p>The toll did not begin this month. Since the conflict between Israel and Hezbollah escalated in late 2023, Lebanon's health system has absorbed wave after wave of mass-casualty events, each followed by a brief lull and then a fresh round of strikes. The pattern repeating now in Nabatiyeh — bombardment, casualties, a fragile truce, renewed bombardment — has become familiar enough to Lebanese health workers that some hospitals maintain standing shelter-in-place protocols, treating a return to violence less as an exception than as a recurring operating condition.</p>
+
+    <h2>147 Attacks Since March</h2>
+
+    <p>The June 19 mass-casualty event was not an isolated spike. From March 2 up to the most recent fragile truce, the World Health Organization documented 147 attacks on healthcare in Lebanon — near-daily strikes that damaged hospitals and left more than 100 health workers dead and 233 injured. At least six hospitals were forced to close entirely, and of 207 primary health centres and dispensaries operating in conflict-affected areas, 100 are no longer functioning, according to WHO. Some facilities were struck more than once while teams were actively treating patients inside.</p>
+
+    <h2>Sleeping Where They Work</h2>
+
+    <p>To keep care running, hospital staff in Nabatiyeh largely stopped going home. "Healthcare staff in Nabatiyeh's hospitals slept inside the hospitals for a total of 46 days," said Tania Hachem, an MSF medical programme manager. At Nabatiyeh governmental hospital, around 42 people — medical staff and their children among them — sheltered inside the building itself rather than risk the commute through the city. "Part of our emergency-preparedness plan was for everyone to remain inside the hospital, so no one had to go back and forth," said Mona Abu Zeid, a physician and director of Najdeh Al-Shaabiyeh hospital, who stayed at the facility throughout the worst of the bombardment. "Doctors slept here and their children stayed with them."</p>
+
+    <p>The losses were not abstract for the staff treating them. Ahmad Zreik, a general practitioner at Nabatiyeh governmental hospital, described the morning he learned a paramedic colleague had been killed responding to a strike. "We had just seen him that very morning — everything was perfectly normal, until suddenly it isn't," Zreik said. "He left to respond to an emergency, suffered severe trauma, and was killed as a result. He returned in body, but without his soul."</p>
+
+    <h2>When Rescue Itself Becomes Dangerous</h2>
+
+    <p>MSF says some of the search-and-rescue and ambulance teams it supports have been unable to reach wounded civilians or evacuate them at all, because moving through Nabatiyeh during active bombardment is, in the organisation's words, simply too dangerous — and because responders have repeatedly come under fire while doing their jobs. In Sour, medical staff at Hiram hospital were wounded by shattering glass from a nearby blast; at Lebanese Italian hospital, strikes in the vicinity damaged kidney dialysis machines; staff at Jabal Amel hospital reinforced their own windows after they were blown out by the force of nearby explosions.</p>
+
+    <h2>A Protection Question, Not Just a Medical One</h2>
+
+    <p>Under international humanitarian law, hospitals, ambulances, and medical and rescue personnel carry explicit protected status — they are not legitimate military targets, and attacking them is a serious violation regardless of the surrounding conflict's politics. Amnesty International, investigating four earlier strikes on health facilities and vehicles in Beirut and southern Lebanon, found they killed 19 health workers and wounded 11 more, and called for the attacks to be investigated as war crimes. MSF's appeal after June 19 was correspondingly narrow and specific: not a call to end the war, but a demand for "the immediate protection of civilians and medical and rescue workers" and unhindered access for the teams trying to reach the wounded.</p>
+
+    <p>A new round of US-mediated regional talks was, as of June 20, scheduled to convene in Switzerland — talks that the strikes on Nabatiyeh threatened to derail before they even began. Whatever their outcome, the gap they are unlikely to close quickly is the one inside Lebanon's hospitals: 147 documented attacks, more than 100 health workers dead, and a healthcare workforce that has spent over six weeks sleeping next to the wards it treats, because going home was judged more dangerous than staying.</p>
+
+    <div class="source-box">
+      <strong>Sources</strong><br>
+      MSF, June 19, 2026: <a href="https://www.doctorswithoutborders.org/latest/lebanon-msf-warns-deadly-conditions-nabatiyeh" target="_blank" rel="noopener">Lebanon: MSF warns of deadly conditions in Nabatiyeh</a><br>
+      MSF Canada, Apr 29, 2026: <a href="https://www.doctorswithoutborders.ca/lebanon-46-days-of-bombardment-strained-healthcare-system/" target="_blank" rel="noopener">Lebanon: 46 days of bombardment strained healthcare system</a><br>
+      Al Jazeera, June 20, 2026: <a href="https://www.aljazeera.com/news/2026/6/20/us-envoy-headed-for-switzerland-israeli-strikes-on-lebanon-threaten-talks" target="_blank" rel="noopener">Israeli attacks kill dozens in Lebanon as US, Iran to hold talks on truce</a><br>
+      Amnesty International, Mar 2025: <a href="https://www.amnesty.org/en/latest/news/2025/03/lebanon-israeli-attacks-on-health-facilities-ambulances-and-paramedics-must-be-investigated-as-war-crimes/" target="_blank" rel="noopener">Lebanon: Israeli attacks on health facilities, ambulances and paramedics must be investigated as war crimes</a><br>
+      Image: Unsplash License — free to use, no attribution required.
+    </div>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Perspective</span>
+      <p>What makes Nabatiyeh's case distinct is not the scale of any single strike — Lebanon's health workers have absorbed worse single days since 2023 — but the duration of the exposure. A hospital can run on adrenaline through one mass-casualty night. It cannot indefinitely run a maternity ward, a dialysis unit, and an emergency department on staff who have not slept in their own homes for 46 days. The 147-attack tally is a count of incidents; the harder number to track is how many more years of sustained, low-grade institutional exhaustion a health system can absorb before its capacity — not just its buildings — starts to fail permanently.</p>
+    </div>
+
+    <details class="id-summary">
+      <summary>Indonesian Summary</summary>
+      <p>Pada 19 Juni 2026, satu rumah sakit di Nabatiyeh, Lebanon selatan, menerima 25 korban tewas dan 37 luka dalam hitungan jam akibat serangan udara Israel yang berlanjut meski gencatan senjata secara teknis masih berlaku. Ini hanya satu insiden dari 147 serangan terhadap fasilitas kesehatan yang tercatat WHO sejak Maret 2026, menewaskan lebih dari 100 tenaga kesehatan. Staf rumah sakit di Nabatiyeh, termasuk dokter dan keluarganya, terpaksa tinggal dan tidur di dalam gedung rumah sakit selama 46 hari karena pulang ke rumah dinilai lebih berbahaya daripada bertahan di tempat kerja. MSF dan Amnesty International mendesak perlindungan bagi tenaga medis dan tim penyelamat sesuai hukum humaniter internasional.</p>
+    </details>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">
+    <strong style="color:var(--ink);">Ummanitarian Insight</strong> — Humanitarian knowledge, plainly told.<br>
+    A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian</a>. Follow us: <a href="https://instagram.com/ummanitarian_" style="color:var(--red);">@ummanitarian_</a>
+  </div>
+</footer>
+
+</body>
+</html>
