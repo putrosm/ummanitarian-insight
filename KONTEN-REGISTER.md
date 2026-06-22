@@ -19,11 +19,5 @@
 | 011 | gaza-resiliensi-kamal-putra-pratama | Gaza: While the World Counts the Dead, They Count Reasons to Keep Living | Jun 2026 | Guest (article-card) | Kamal Putra Pratama |
 | 012 | aceh-barat-flood-local-disaster-response | 130 Homes, 30 Hours: Aceh Barat's Flood and the Machinery Nobody Notices | Jun 2026 | Internal (article-card) | Claude |
 | 013 | iran-war-global-hunger-bill | 510 to 1: The Iran War's Bill for Global Hunger | Jun 2026 | Internal (article-card) | Claude |
-| 014 | nduta-camp-closure-burundian-refugees | Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists | Jun 2026 | Internal (hero aktif) | Claude |
-
-**Next available: 015**
-
----
-
-> Catatan: Nomor 001 tidak digunakan. Penomoran dimulai dari 002.
-> Wadem-congress-2027 adalah halaman event terpisah, tidak masuk urutan nomor.
+| 014 | nduta-camp-closure-burundian-refugees | Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists | Jun 2026 | Internal (article-card) | Claude |
+| 015 | nabatiyeh-lebanon-hospitals-under-siege | 62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege | Jun 2026 | Internal (hero aktif, pending review) | Cla
