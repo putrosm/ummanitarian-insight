@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>557 Then 172: Boalemo's Floods Keep Finding the Same Houses — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/016-boalemo-gorontalo-recurring-flood-risk/">
+  <meta property="og:title" content="557 Then 172: Boalemo's Floods Keep Finding the Same Houses">
+  <meta property="og:description" content="A flash flood displaced 486 people in Boalemo, Gorontalo on June 18 — the same district BNPB recorded flooding fourteen months earlier. The response is fast each time. The river is never fixed.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1741081038901-f258dd2f5a1c?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="BNPB recorded a flood in Boalemo, Gorontalo on June 18, 2026 — the same district that flooded in April 2025. Two events, one unresolved structural problem, and a disaster-financing model with no mechanism to escalate it.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-deck {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body p:first-of-type {
+    font-size: 1.08rem;
+    color: var(--ink-mid);
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+  .article-page-body em { font-style: italic; }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  .id-summary {
+    margin: 1.5rem 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--cream-dark);
+  }
+  .id-summary summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 0.8rem 1.2rem;
+  }
+  .id-summary summary::-webkit-details-marker { display: none; }
+  .id-summary summary::after { content: " \25BE"; }
+  .id-summary[open] summary::after { content: " \25B4"; }
+  .id-summary p {
+    padding: 0 1.2rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-mid);
+  }
+
+  footer {
+    background: var(--cream-dark);
+    border-top: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); line-height: 1.6; }
+
+  @media (max-width: 600px) {
+    .article-page-headline { font-size: 1.6rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <a href="/" class="site-name" style="text-decoration:none;color:inherit;">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </a>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all" class="active">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Capacity &amp; Resources</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-about">About</a>
+  </nav>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<main class="article-page">
+  <a class="back-link" href="/">← Back to Insight</a>
+
+  <span class="article-page-category">Climate &amp; Environment · Boalemo, Indonesia</span>
+
+  <h1 class="article-page-headline">557 Then 172: Boalemo's Floods Keep Finding the Same Houses</h1>
+
+  <p class="article-page-deck">A flash flood swept through three sub-districts in Boalemo, Gorontalo on June 18, displacing 486 people — the same villages BNPB recorded flooding fourteen months earlier. The water always recedes by nightfall. The reason it keeps returning has not.</p>
+
+  <div class="article-page-meta">
+    <span>By Ummanitarian Insight Editorial Team</span>
+    <span>·</span>
+    <span>June 2026</span>
+    <span>·</span>
+    <span>5 min read</span>
+    <span>·</span>
+    <span style="color:var(--red)">Climate &amp; Environment</span>
+  </div>
+
+  <img class="article-page-img"
+    src="https://images.unsplash.com/photo-1741081038901-f258dd2f5a1c?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0"
+    alt="Floodwater submerging a residential neighborhood in Indonesia after heavy rainfall"
+  >
+  <p class="img-caption">Floodwater surrounds homes after heavy rain in Indonesia — a scene that repeated in Boalemo, Gorontalo on June 18, and in the same district fourteen months before that.</p>
+
+  <div class="article-page-body">
+
+    <p>On Thursday, June 18, 2026, at around 12:30 p.m. local time, heavy rain pushed the rivers running through Kecamatan Wonosari and Kecamatan Paguyaman, in Kabupaten Boalemo, Gorontalo province, over their banks. By the time joint teams from the provincial and district disaster agencies (BPBD) reached Desa Diloato, Desa Harapan, Desa Mekar Jaya, and Desa Bongo Tua, floodwater had already moved through the area. The rapid assessment that followed counted 155 houses inundated, along with a government office and a vocational high school, SMK Negeri 1 Wonosari. In total, 172 households — 486 people — were affected, according to Indonesia's National Disaster Management Agency (BNPB). By evening the same day, the water had receded, leaving behind the usual layer of mud and household debris that residents began clearing before nightfall.</p>
+
+    <p>It is a familiar sequence — almost too familiar. This was not Boalemo's first flood this year, nor its first significant one in recent memory. In April 2025, the same district recorded a larger event: BNPB's rapid assessment counted 572 homes damaged and 557 households — 1,266 people — affected across three sub-districts, including Wonosari again, plus Paguyaman and Dulupi. That flood damaged four houses of worship, a health facility, three schools, and severed a bridge connecting two villages. The response then looked almost identical to the response now: a rapid assessment, distribution of tents, food packages and hygiene kits, a wait for the water to recede, a cleanup, and a return to normal — until the next heavy rain.</p>
+
+    <p>Boalemo's repeat flooding is not an isolated anomaly inside Indonesia's disaster calendar; it is one entry in a wider pattern BNPB is tracking in real time, nationwide. In the same 24-hour monitoring window that covered the Boalemo flood (June 18–19), the agency also recorded a flood in Lubuklinggau, South Sumatra — a different province, a smaller event, 15 households — and, simultaneously, a drought serious enough in Pasuruan, East Java, that BPBD had to truck in clean water for 211 households. Flood and drought, a thousand kilometers apart, inside the same 24 hours: hydrometeorological disasters that BNPB's head of disaster data and information, Abdul Muhari, described as the category still "dominating" the national disaster log week after week — even as a magnitude-6.7 earthquake in Central Sulawesi continued to occupy emergency teams elsewhere in the archipelago.</p>
+
+    <h2>The Same Villages, Twice</h2>
+
+    <p>What stands out about Boalemo specifically is the overlap. Desa-level data places Wonosari sub-district among the worst-hit areas in both the April 2025 flood and the June 2026 flood, sitting low against a river system that BPBD and BNPB describe in near-identical terms each time it floods: high-intensity rain, a river that cannot carry the runoff fast enough, and a populated floodplain with nowhere for the water to go but through people's homes. Whatever measures were taken between the two events — and BNPB's public releases do not name a specific structural project completed in the intervening fourteen months — were not enough to keep Wonosari dry the second time. The exact villages affected shifted somewhat within the district; the underlying flood path, broadly, did not.</p>
+
+    <h2>Fast Response, Slow Prevention</h2>
+
+    <p>Indonesia's district-level disaster machinery is, in one sense, working exactly as designed. Within hours of the June 18 rain, BPBD officers were on the ground conducting <em>kaji cepat</em> — rapid assessment — and channeling immediate relief. BNPB's standard advisory, repeated after this flood almost word-for-word as it was after April 2025's, urges residents to monitor official weather updates and evacuate on their own initiative if heavy rain persists for two hours or more. That advice is sound for the next storm. It is not, on its own, a plan for the river. River normalization, drainage-capacity upgrades, and retention infrastructure — the kind of structural investment that would change whether Wonosari and Paguyaman flood at all, rather than how fast they recover once they do — fall outside what an emergency-response agency budgets for, or is mandated to deliver, in the days after a flood recedes.</p>
+
+    <p>None of this makes the June 18 response inadequate on its own terms: water receded within hours, no deaths were reported, and affected families received the kits and food packages BNPB's standard protocol calls for. But measured against April 2025's nearly identical script, Boalemo's flood file is no longer best read as two separate emergencies. It is one unresolved structural problem that has now produced two recorded events, a combined tally approaching 1,750 people displaced, and a pattern of locally felt damage too small individually to draw the kind of capital investment that single catastrophic disasters attract — yet large enough, repeated, to keep showing up at the same families' doors.</p>
+
+    <div class="source-box">
+      <strong>Sources</strong><br>
+      BNPB, June 19, 2026: <a href="https://bnpb.go.id/berita/perkembangan-situasi-dan-penanganan-bencana-di-tanah-air-19-juni-2026" target="_blank" rel="noopener">Perkembangan Situasi dan Penanganan Bencana di Tanah Air 19 Juni 2026</a><br>
+      BNPB, April 12, 2025: <a href="https://bnpb.go.id/berita/sebanyak-572-rumah-terdampak-banjir-di-boalemo-gorontalo" target="_blank" rel="noopener">Sebanyak 572 Rumah Terdampak Banjir di Boalemo, Gorontalo</a><br>
+      Image: Unsplash License — free to use, no attribution required.
+    </div>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Perspective</span>
+      <p>Disaster financing and media attention are both built around single-event thresholds — a death toll, a magnitude, a number of provinces crossed. Boalemo's case argues for tracking flood-prone districts cumulatively instead. A flood that displaces 486 people once is a one-day story; the same district flooding twice in fourteen months, displacing close to 1,750 people combined, is a maintenance backlog — and one that Indonesia's current disaster-response model has no clear mechanism to escalate into the structural-investment conversation it would need to actually end the pattern.</p>
+    </div>
+
+    <details class="id-summary">
+      <summary>Indonesian Summary</summary>
+      <p>Banjir bandang melanda tiga kecamatan di Kabupaten Boalemo, Provinsi Gorontalo pada 18 Juni 2026, merendam 155 rumah dan berdampak pada 172 keluarga atau 486 jiwa. Ini bukan kejadian pertama: pada April 2025, banjir yang lebih besar melanda kecamatan yang sama, berdampak pada 557 keluarga dan merusak sebuah jembatan serta beberapa fasilitas umum. BNPB mencatat air surut hanya dalam hitungan jam pada kedua kejadian, namun pola banjir berulang ini menunjukkan bahwa penanganan darurat yang cepat belum diikuti oleh investasi struktural — seperti normalisasi sungai atau peningkatan kapasitas drainase — yang dapat mencegah banjir terjadi lagi di lokasi yang sama.</p>
+    </details>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">
+    <strong style="color:var(--ink);">Ummanitarian Insight</strong> — Humanitarian knowledge, plainly told.<br>
+    A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian</a>. Follow us: <a href="https://instagram.com/ummanitarian_" style="color:var(--red);">@ummanitarian_</a>
+  </div>
+</footer>
+
+</body>
+</html>
