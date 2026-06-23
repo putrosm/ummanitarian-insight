@@ -20,4 +20,5 @@
 | 012 | aceh-barat-flood-local-disaster-response | 130 Homes, 30 Hours: Aceh Barat's Flood and the Machinery Nobody Notices | Jun 2026 | Internal (article-card) | Claude |
 | 013 | iran-war-global-hunger-bill | 510 to 1: The Iran War's Bill for Global Hunger | Jun 2026 | Internal (article-card) | Claude |
 | 014 | nduta-camp-closure-burundian-refugees | Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists | Jun 2026 | Internal (article-card) | Claude |
-| 015 | nabatiyeh-lebanon-hospitals-under-siege | 62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege | Jun 2026 | Internal (hero aktif, pending review) | Cla
+| 015 | nabatiyeh-lebanon-hospitals-under-siege | 62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege | Jun 2026 | Internal (article-card) | Claude |
+| 016 | boalemo-gorontalo-recurring-flood-risk | 557 Then 172: Boalemo's Floods Keep Finding the Same Houses | Jun 2026 | Internal (article-card) | Claude |
