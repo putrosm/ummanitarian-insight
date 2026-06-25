@@ -22,3 +22,6 @@
 | 014 | nduta-camp-closure-burundian-refugees | Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists | Jun 2026 | Internal (article-card) | Claude |
 | 015 | nabatiyeh-lebanon-hospitals-under-siege | 62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege | Jun 2026 | Internal (article-card) | Claude |
 | 016 | boalemo-gorontalo-recurring-flood-risk | 557 Then 172: Boalemo's Floods Keep Finding the Same Houses | Jun 2026 | Internal (article-card) | Claude |
+| 017 | sudan-north-kordofan-healthcare-drone-attacks-cholera | No Power, No Dialysis, No Clean Water: North Kordofan's Collapsing Health System | Jun 2026 | Internal (article-card) | Claude |
+| 018 | syria-wfp-bread-subsidy-hunger-funding | Four Million Daily: Syria's Bread Lifeline Has Been Cut | Jun 2026 | Internal (DRAFT — lokal, belum push ke GitHub) | Claude |
+| 019 | lombok-barat-drought-clean-water-crisis | Thirty Days Without Rain: Lombok Barat's Clean Water Emergency | Jun 2026 | Internal (hero aktif — pending review 06:05 WIB) | Claude |
