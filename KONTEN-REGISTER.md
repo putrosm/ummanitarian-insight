@@ -23,5 +23,6 @@
 | 015 | nabatiyeh-lebanon-hospitals-under-siege | 62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege | Jun 2026 | Internal (article-card) | Claude |
 | 016 | boalemo-gorontalo-recurring-flood-risk | 557 Then 172: Boalemo's Floods Keep Finding the Same Houses | Jun 2026 | Internal (article-card) | Claude |
 | 017 | sudan-north-kordofan-healthcare-drone-attacks-cholera | No Power, No Dialysis, No Clean Water: North Kordofan's Collapsing Health System | Jun 2026 | Internal (article-card) | Claude |
-| 018 | syria-wfp-bread-subsidy-hunger-funding | Four Million Daily: Syria's Bread Lifeline Has Been Cut | Jun 2026 | Internal (DRAFT — lokal, belum push ke GitHub) | Claude |
-| 019 | lombok-barat-drought-clean-water-crisis | Thirty Days Without Rain: Lombok Barat's Clean Water Emergency | Jun 2026 | Internal (hero aktif — pending review 06:05 WIB) | Claude |
+| 018 | syria-wfp-bread-subsidy-hunger-funding | Four Million Daily: Syria's Bread Lifeline Has Been Cut | Jun 2026 | Internal (article-card) | Claude |
+| 019 | lombok-barat-drought-clean-water-crisis | Thirty Days Without Rain: Lombok Barat's Clean Water Emergency | Jun 2026 | Internal (article-card) | Claude |
+| 020 | venezuela-earthquake-usar-response | 44 Teams, 27 Countries: Venezuela's Twin Earthquakes and the Race to Pull People From the Rubble | Jun 2026 | Internal (article-card) | Claude |
