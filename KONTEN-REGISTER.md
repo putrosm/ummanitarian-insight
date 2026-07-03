@@ -27,3 +27,4 @@
 | 019 | lombok-barat-drought-clean-water-crisis | Thirty Days Without Rain: Lombok Barat's Clean Water Emergency | Jun 2026 | Internal (article-card) | Claude |
 | 020 | venezuela-earthquake-usar-response | 44 Teams, 27 Countries: Venezuela's Twin Earthquakes and the Race to Pull People From the Rubble | Jun 2026 | Internal (article-card) | Claude |
 | 021 | el-fasher-rsf-war-crimes-report | Nineteen Videos, One Massacre: Amnesty's Case Against the RSF in El Fasher | Jul 2026 | Internal (article-card) | Claude |
+| 022 | ghana-accra-record-floods-response | 593 Millimetres, One Month: Inside Ghana's Worst Flooding on Record | Jul 2026 | Internal (article-card) | Claude |
