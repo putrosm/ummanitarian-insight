@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forty-Three Per Cent: The Ebola Response Infrastructure That's Being Dismantled Mid-Outbreak — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/027-drc-ebola-response-infrastructure-collapse/">
+  <meta property="og:title" content="Forty-Three Per Cent: The Ebola Response Infrastructure That's Being Dismantled Mid-Outbreak">
+  <meta property="og:description" content="With 1,561 confirmed cases and 506 deaths across the DRC and Uganda, the largest Bundibugyo epidemic on record is accelerating — precisely as CDC defunding empties the laboratories and contact tracers that stopped sixteen previous outbreaks.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1576091160550-2173dba999ef?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="As the 2026 Ebola Bundibugyo outbreak in DRC reaches 1,561 cases and 506 deaths, the response infrastructure built to stop such epidemics — CDC field capacity, PEPFAR-funded laboratories, contact tracing networks — is being systematically defunded. Contact tracing coverage has collapsed from 79% to 43%.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-deck {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body p:first-of-type {
+    font-size: 1.08rem;
+    color: var(--ink-mid);
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+  .article-page-body em { font-style: italic; }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  .id-summary {
+    margin: 1.5rem 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--cream-dark);
+  }
+  .id-summary summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 0.8rem 1.2rem;
+  }
+  .id-summary summary::-webkit-details-marker { display: none; }
+  .id-summary summary::after { content: " \25BE"; }
+  .id-summary[open] summary::after { content: " \25B4"; }
+  .id-summary p {
+    padding: 0 1.2rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-mid);
+  }
+
+  footer {
+    background: var(--cream-dark);
+    border-top: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); line-height: 1.6; }
+
+  @media (max-width: 600px) {
+    .article-page-headline { font-size: 1.6rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <a href="/" class="site-name" style="text-decoration:none;color:inherit;">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </a>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all" class="active">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Capacity &amp; Resources</a>
+  </nav>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<main>
+  <a href="/" class="back-link">← Back to Insights</a>
+
+  <span class="article-page-category">Health &amp; Displacement &middot; DRC</span>
+
+  <h1 class="article-page-headline">Forty-Three Per Cent: The Ebola Response Infrastructure That&rsquo;s Being Dismantled Mid-Outbreak</h1>
+
+  <p class="article-page-deck">With 1,561 confirmed cases and 506 deaths across the DRC and Uganda, the largest Bundibugyo epidemic on record is accelerating &mdash; precisely as CDC defunding empties the laboratories and contact tracers that stopped sixteen previous outbreaks.</p>
+
+  <div class="article-page-meta">
+    <span>By Ummanitarian Insight Editorial Team</span>
+    <span>&middot;</span>
+    <span>July 2026</span>
+    <span>&middot;</span>
+    <span>7 min read</span>
+  </div>
+
+  <img
+    class="article-page-img"
+    src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0"
+    alt="A healthcare worker in full protective equipment reviews patient data inside a clinical response setting"
+  >
+  <p class="img-caption">Health workers in personal protective equipment form the visible edge of outbreak response — but the infrastructure underneath them, from laboratory diagnostics to contact tracing networks, determines whether a response succeeds. Photo: Unsplash.</p>
+
+  <div class="article-page-body">
+
+    <p>Forty-six days into the epidemic, on 30 June 2026, the Democratic Republic of the Congo logged its 1,354th confirmed Ebola case and its 401st confirmed death. By 4 July, those numbers had climbed to 1,561 and 506. The crude case fatality rate sits at approximately 30 per cent. The daily case count &mdash; averaging 26 new confirmed infections as of late June &mdash; shows no sign of declining.</p>
+
+    <p>What makes this outbreak different from the sixteen that preceded it is not only the strain &mdash; Bundibugyo virus, for which no licensed vaccine or approved therapeutic exists &mdash; but the condition of the infrastructure that is supposed to contain it. The tools to stop this epidemic are not missing because they were never built. They are missing because they are being deliberately dismantled.</p>
+
+    <h2>The Anatomy of the Outbreak</h2>
+
+    <p>The 2026 epidemic began in Mongbwalu Health Zone in Ituri Province, northeastern DRC, and was confirmed by laboratory analysis in early May. On 17 May, the World Health Organization declared the outbreak a Public Health Emergency of International Concern (PHEIC) &mdash; only the eighth such declaration in WHO history. By early July, the virus had spread to four provinces: Ituri, North Kivu, South Kivu (including militia-controlled areas held by M23), and Haut-Uele. The entire northeast of the DRC &mdash; home to roughly 15 million people &mdash; is now affected.</p>
+
+    <p>Uganda reported 20 cases and 2 deaths linked to cross-border transmission. France reported one confirmed case: a physician who had returned from a humanitarian mission in the DRC. The geographic footprint of this outbreak, already spanning international borders within 46 days, is without precedent for the Bundibugyo strain.</p>
+
+    <p>More than 90 per cent of confirmed cases are concentrated in Ituri Province, with spread into North Kivu and the M23-held zones of South Kivu. Across these three provinces, displacement is among the highest in the world: more than 5 million people are displaced, many living in dense camps where the standard conditions for Ebola containment &mdash; isolation, clean water, consistent healthcare access &mdash; are structurally impossible to maintain. At a 15,000-person displacement camp in Bunia, at least 30 suspected deaths have occurred since early May, with confirmed cases recorded at two other camps.</p>
+
+    <div class="source-box">
+      <strong>Primary sources:</strong> WHO, &ldquo;Ebola outbreak &mdash; DRC 2026&rdquo; (<a href="https://www.who.int/emergencies/situations/ebola-outbreak---drc-2026" target="_blank" rel="noopener">who.int</a>). UNHCR, &ldquo;Preparedness and Response: Ebola (Bundibugyo Virus Disease), July 2026 &ndash; November 2026&rdquo; (<a href="https://reliefweb.int/report/democratic-republic-congo/unhcr-preparedness-and-response-ebola-bundibugyo-virus-disease-july-2026-november-2026" target="_blank" rel="noopener">reliefweb.int</a>). World Bank, &ldquo;Response to Ebola Outbreak in DRC and Uganda&rdquo; (<a href="https://www.worldbank.org/en/news/factsheet/2026/05/27/ebola-outbreak-response-democratic-republic-of-congo-uganda" target="_blank" rel="noopener">worldbank.org</a>).
+    </div>
+
+    <h2>Forty-Three Per Cent</h2>
+
+    <p>In outbreak response, contact tracing is the operational core. Identifying every person who had contact with a confirmed Ebola case, monitoring them for 21 days, and isolating them at the first sign of symptoms is the only mechanism that interrupts chains of transmission when no vaccine exists. The 2018&ndash;2020 Kivu outbreak &mdash; the second largest in history, eventually contained after nearly two years &mdash; achieved 79 per cent contact tracing coverage at the one-month mark. The current outbreak, at the same point in its timeline, had reached 43 per cent.</p>
+
+    <p>The gap between those two numbers is not a mystery. The infrastructure that produced 79 per cent in 2018 included extensive CDC field presence, PEPFAR-funded laboratory networks capable of rapid specimen processing, and a trained local workforce built up over years of continuous international investment. That infrastructure no longer exists in the same form. The CDC, under the Trump administration&rsquo;s America First Global Health Strategy, has been converting its global health assistance from a direct-engagement model to a fee-for-service arrangement: countries must now purchase CDC assistance item by item from a priced menu, and the agency has been withdrawing its own staff in parallel.</p>
+
+    <p>For Uganda, which is now managing cross-border transmission from the DRC, the practical impact is a 14-fold reduction in CDC spending compared to fiscal year 2023. The country is battling Ebola cases as the institution that helped end 16 previous DRC outbreaks scales back its presence.</p>
+
+    <h2>The Laboratory Problem</h2>
+
+    <p>Ebola containment depends on laboratory infrastructure long before it depends on hospitals. Rapid, accurate diagnosis is the prerequisite for contact tracing: without confirmed test results, you cannot identify cases, and without cases you cannot trace contacts. The laboratories that currently diagnose Ebola, Marburg, and hantavirus in eastern DRC were largely built and supported with PEPFAR funding &mdash; not because PEPFAR is an outbreak response programme, but because the HIV diagnosis infrastructure it built also diagnoses everything else.</p>
+
+    <p>Analyst Emily Bass, who obtained and published the CDC&rsquo;s new fee schedule for global health services, has described PEPFAR-built laboratories as the backbone of the entire infectious disease surveillance architecture in the region. When PEPFAR HIV testing in the DRC and neighbouring countries is cut, the diagnostic capacity for outbreak detection is cut with it. PEPFAR-supported HIV testing across all programme countries dropped from 21.9 million tests to 17.2 million in a single quarter year-over-year, according to the programme&rsquo;s own April 2026 data release.</p>
+
+    <p>The State Department has confirmed that CDC support in most recipient countries will end as of 30 September 2026. In the DRC, where the current outbreak shows no sign of peaking, that date falls during the outbreak itself.</p>
+
+    <h2>Funding That Doesn&rsquo;t Reach the Field</h2>
+
+    <p>The broader humanitarian financing picture compounds the laboratory problem. OCHA&rsquo;s DRC humanitarian appeal was cut 46 per cent in 2026 &mdash; from US$2.58 billion to US$1.4 billion &mdash; and of the funding that does flow, less than 6 per cent reaches local responders. The International Committee of the Red Cross has reported that 85 per cent of facilities in the Kivu provinces lack adequate medication and 40 per cent have experienced staff exoduses. Africa CDC Director-General Jean Kaseya warned in late June that 95 per cent of national health-system beds across the affected area are occupied.</p>
+
+    <p>On 5 June 2026, Africa CDC and WHO launched a joint continental preparedness and response plan aimed at raising US$518 million. UNHCR published its own preparedness and response plan covering July through November 2026, focused on protecting the displaced populations that are simultaneously the most vulnerable to transmission and the hardest to reach for contact tracing. A CDC analysis published in the Morbidity and Mortality Weekly Report found a 65 per cent likelihood that the outbreak will exceed 20,000 cases within three months absent aggressive isolation measures.</p>
+
+    <p>The water and sanitation dimension makes the picture worse. In Mongbwalu, the mining epicenter of the outbreak, only 20 per cent of residents have access to clean water. Water costs US$2 per 20 litres &mdash; the WHO daily survival minimum for a single person. In the DRC as a whole, only 43 per cent of the population uses basic water services and 15 per cent have basic sanitation, according to a December 2025 UNICEF report. Without water for decontamination, healthcare facilities become transmission nodes. Oxfam field coordinator Manel Rebordosa has stated that water is the absolute first line of defence in Ebola containment. It is also among the things the response can least afford to provide.</p>
+
+    <h2>What the 2018 Outbreak Had That This One Doesn&rsquo;t</h2>
+
+    <p>The 2018&ndash;2020 Kivu outbreak eventually drew more than 1,500 WHO personnel, 16,000 local workers, and 300,000 vaccinations using a licensed Zaire-strain vaccine. Its containment required nearly two years and took place in a more permissive security environment than the M23-controlled zones that now divide eastern DRC. The current outbreak has none of those tools. There is no licensed vaccine for the Bundibugyo strain, though candidate vaccines and investigational therapeutics have entered clinical trials. There are no 16,000 local workers; the workforce was built on investment that is no longer flowing.</p>
+
+    <p>The epidemiological curve for 2026 climbs steeper than any previous outbreak at the same stage. The CDC&rsquo;s own epidemiologists have described this trajectory precisely: the knowledge to stop this epidemic exists, distributed across 16 successful containment efforts since 1976. The infrastructure to apply it is being withdrawn while case counts climb.</p>
+
+    <p>That is not a capacity failure. It is a policy decision &mdash; and its consequences will be measured in preventable deaths.</p>
+
+    <details class="id-summary">
+      <summary>Indonesian Summary</summary>
+      <p>Wabah Ebola Bundibugyo di Kongo (DRC) yang dikonfirmasi sejak Mei 2026 telah mencapai 1.561 kasus terkonfirmasi dan 506 kematian per 4 Juli 2026 — menjadikannya epidemi Bundibugyo terbesar dalam sejarah. Wabah ini kini menyebar ke empat provinsi DRC serta Uganda dan Prancis. Tidak ada vaksin atau terapi yang tersedia untuk strain Bundibugyo. Yang memperparah situasi adalah runtuhnya infrastruktur respons: pelacakan kontak yang seharusnya memutus rantai penularan hanya mencapai 43% (dibanding 79% pada wabah 2018), akibat pemangkasan besar-besaran dana CDC dan PEPFAR oleh pemerintah AS. Laboratorium diagnostik yang dibangun dengan dana PEPFAR — tulang punggung pengawasan penyakit di kawasan itu — terancam ditinggalkan. Anggaran kemanusiaan DRC dipotong 46%, dan kurang dari 6% dana sampai ke responden lokal. UNHCR dan WHO telah menerbitkan rencana respons baru untuk Juli–November 2026, namun kesenjangan antara kebutuhan dan sumber daya tetap besar.</p>
+    </details>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Insight</span>
+      <p>The 43 per cent contact tracing figure is not just a metric; it is a measurement of institutional withdrawal. Each percentage point below 79 represents cases that will go undetected, contacts that will go unmonitored, and transmission chains that will go unbroken. The current outbreak is, in the most literal sense, an experiment in what happens when the response infrastructure built over decades is defunded in the middle of the emergency it was built for. The 2026 epidemic will not be the last test of this question. The decisions being made now &mdash; about where CDC staff are deployed, which laboratories remain funded, how much of the humanitarian appeal is actually mobilised &mdash; will determine not just this outbreak&rsquo;s trajectory but the preparedness posture for every outbreak that follows.</p>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  <div class="footer-text">
+    <strong style="color:var(--ink);">Ummanitarian Insight</strong><br>
+    Humanitarian knowledge, plainly told.<br>
+    &copy; 2026 Ummanitarian. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
