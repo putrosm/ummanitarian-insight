@@ -30,3 +30,5 @@
 | 022 | ghana-accra-record-floods-response | 593 Millimetres, One Month: Inside Ghana's Worst Flooding on Record | Jul 2026 | Internal (article-card) | Claude |
 | 023 | jatiwaringin-landfill-fire-water-bombing | 4,000 Litres at a Time: Water Bombers Over Tangerang's Burning Landfill | Jul 2026 | Internal (article-card) | Claude |
 | 024 | apsccem-2026-bali-critical-care-symposium | 30 Years, 40 Credit Points: Asia Pacific Critical Care Convenes in Bali | Jul 2026 | Internal (article-card, injected) | Claude + Ng |
+| 025 | kyiv-largest-attack-civilian-protection | Eleven Hours Underground: Kyiv's Largest Attack and the Normalization of Civilian Harm | Jul 2026 | Internal (article-card) | Claude |
+| 026 | merapi-lahar-water-recovery-el-nino | 33 Kilometres, 4,000 Families: Merapi's Lahar Survivors Get Water Back — With El Niño on the Way | Jul 2026 | Internal (article-card) | Claude |
