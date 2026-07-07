@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza — Ummanitarian Insight</title>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://insight.ummanitarian.org/028-gaza-chickenpox-displacement-health-crisis/">
+  <meta property="og:title" content="Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza">
+  <meta property="og:description" content="When the UN's Health Cluster raised an alert for a chickenpox surge across Gaza in late June, it was tracking 9,300 cases across 130 health facilities in less than two weeks. The disease is not new. The conditions that made it an emergency are.">
+  <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/c/cf/An_informal_tented_settlement_in_Lebanons_Bekaa_valley_%2811174052664%29.jpg">
+  <meta property="og:site_name" content="Ummanitarian Insight">
+  <meta name="description" content="In two weeks, 9,300 chickenpox cases spread across 130 health facilities in Gaza's 1,600+ displacement sites. With Al Shifa's dialysis machines failing and aid volumes declining, the outbreak reveals the full depth of Gaza's public health collapse.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --cream:      #FFFFFF;
+    --cream-dark: #F4F4F2;
+    --ink:        #1A1410;
+    --ink-mid:    #3D3530;
+    --ink-light:  #7A6E66;
+    --red:        #EE3124;
+    --rule:       #E8E6E2;
+  }
+
+  html { font-size: 18px; scroll-behavior: smooth; }
+
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--red); }
+
+  header {
+    background: var(--cream);
+    border-bottom: 2px solid var(--ink);
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap {
+    position: relative;
+    margin: 0 -2rem;
+    padding: 0 2rem;
+    overflow: hidden;
+  }
+
+  .nav-wrap::after {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 48px; height: 100%;
+    background: linear-gradient(to right, transparent, var(--cream));
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  .header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem 0 0.8rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .logo-wrap { display: flex; align-items: center; gap: 1rem; }
+
+  .site-name { display: flex; flex-direction: column; line-height: 1.1; }
+  .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--ink-light); }
+  .site-name .title { font-family: 'Playfair Display', Georgia, serif; font-size: 1.8rem; font-weight: 900; color: var(--ink); letter-spacing: -0.01em; }
+  .site-name .title span { color: var(--red); }
+
+  .header-meta { font-family: 'DM Sans', sans-serif; font-size: 0.72rem; font-weight: 300; color: var(--ink-light); text-align: right; }
+  .header-meta .tagline { font-style: italic; display: block; margin-bottom: 0.15rem; }
+
+  nav { display: flex; align-items: center; gap: 1.4rem; padding: 0.6rem 0; overflow-x: auto; -webkit-overflow-scrolling: touch; scrollbar-width: none; -ms-overflow-style: none; white-space: nowrap; flex-wrap: nowrap; }
+  nav::-webkit-scrollbar { display: none; }
+  nav a { font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-mid); transition: color 0.15s; }
+  nav a:hover, nav a.active { color: var(--red); }
+  .nav-dot { width: 3px; height: 3px; background: var(--rule); border-radius: 50%; flex-shrink: 0; }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem 4rem;
+  }
+
+  .back-link {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-light);
+    display: inline-block;
+    margin-bottom: 2rem;
+    transition: color 0.15s;
+  }
+  .back-link:hover { color: var(--red); }
+
+  .article-page-category {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.9rem;
+  }
+
+  .article-page-headline {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+    margin-bottom: 1.2rem;
+  }
+
+  .article-page-deck {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: var(--ink-mid);
+    font-style: italic;
+    margin-bottom: 1.4rem;
+  }
+
+  .article-page-meta {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    color: var(--ink-light);
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+    padding: 0.7rem 0;
+    margin-bottom: 1.8rem;
+  }
+
+  .article-page-img {
+    width: 100%;
+    height: auto;
+    max-height: 460px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid var(--rule);
+    margin-bottom: 0.6rem;
+  }
+
+  .img-caption {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    color: var(--ink-light);
+    margin-bottom: 2rem;
+    font-style: italic;
+  }
+
+  .article-page-body { max-width: 680px; }
+
+  .article-page-body h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 2.2rem 0 0.9rem;
+    letter-spacing: -0.01em;
+  }
+
+  .article-page-body p {
+    margin-bottom: 1.4rem;
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-page-body p:first-of-type {
+    font-size: 1.08rem;
+    color: var(--ink-mid);
+  }
+
+  .article-page-body strong { font-weight: 600; color: var(--ink); }
+  .article-page-body em { font-style: italic; }
+
+  .source-box {
+    background: var(--cream-dark);
+    border-left: 3px solid var(--red);
+    padding: 1rem 1.2rem;
+    margin: 2rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.78rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+  }
+
+  .source-box a { color: var(--red); text-decoration: underline; }
+
+  .ummanitarian-perspective {
+    border-top: 2px solid var(--ink);
+    padding-top: 1.4rem;
+    margin-top: 2.4rem;
+  }
+
+  .ummanitarian-perspective .perspective-label {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--red);
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  .id-summary {
+    margin: 1.5rem 0;
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    background: var(--cream-dark);
+  }
+  .id-summary summary {
+    cursor: pointer;
+    list-style: none;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--red);
+    padding: 0.8rem 1.2rem;
+  }
+  .id-summary summary::-webkit-details-marker { display: none; }
+  .id-summary summary::after { content: " \25BE"; }
+  .id-summary[open] summary::after { content: " \25B4"; }
+  .id-summary p {
+    padding: 0 1.2rem 1rem;
+    margin: 0;
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--ink-mid);
+  }
+
+  footer {
+    background: var(--cream-dark);
+    border-top: 2px solid var(--ink);
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .footer-text { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); line-height: 1.6; }
+
+  @media (max-width: 600px) {
+    .article-page-headline { font-size: 1.6rem; }
+    main { padding: 1.5rem 1rem 3rem; }
+  }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="header-top">
+    <div class="logo-wrap">
+      <a href="/" class="site-name" style="text-decoration:none;color:inherit;">
+        <span class="label">Ummanitarian</span>
+        <span class="title"><span style="color:var(--red)">I</span>nsight</span>
+      </a>
+    </div>
+    <div class="header-meta">
+      <span class="tagline">Humanitarian knowledge, plainly told.</span>
+    </div>
+  </div>
+  <div class="nav-wrap">
+  <nav>
+    <a href="/">← All Insights</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Disaster Response</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Climate &amp; Environment</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Field Ops</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Law &amp; Politics</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all" class="active">Health &amp; Displacement</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-all">Capacity &amp; Resources</a>
+    <div class="nav-dot"></div>
+    <a href="/#section-about">About</a>
+  </nav>
+  </div>
+</header>
+
+<!-- ARTICLE -->
+<main class="article-page">
+  <a class="back-link" href="/">← Back to Insight</a>
+
+  <span class="article-page-category">Health &amp; Displacement &middot; Gaza Strip</span>
+
+  <h1 class="article-page-headline">Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza</h1>
+
+  <p class="article-page-deck">When the UN's Health Cluster raised an alert for a chickenpox surge across Gaza in late June, it was tracking 9,300 cases across more than 130 health facilities in less than two weeks. The disease is not new. The conditions that turned it into an emergency are.</p>
+
+  <div class="article-page-meta">
+    <span>By Ummanitarian Insight Editorial Team</span>
+    <span>·</span>
+    <span>July 2026</span>
+    <span>·</span>
+    <span>7 min read</span>
+    <span>·</span>
+    <span style="color:var(--red)">Health &amp; Displacement</span>
+  </div>
+
+  <img class="article-page-img"
+    src="https://upload.wikimedia.org/wikipedia/commons/c/cf/An_informal_tented_settlement_in_Lebanons_Bekaa_valley_%2811174052664%29.jpg"
+    alt="Rows of white tents cover a hillside in an informal displacement settlement — the kind of overcrowded conditions that enable communicable disease spread"
+  >
+  <p class="img-caption">An informal tented settlement in Lebanon's Bekaa Valley. Gaza's 1,600-plus active displacement sites — hosting roughly 1.7 million people — present analogous conditions: dense, under-resourced, and poorly drained. Photo: DFID – UK Department for International Development, CC BY 2.0.</p>
+
+  <div class="article-page-body">
+
+    <p>When the UN's Health Cluster in Gaza issued an alert in late June 2026, the disease it was warning about was not a new pathogen, not a resurging epidemic, and not one of the conditions typically associated with acute conflict. It was chickenpox. In the span of two weeks, nearly 9,300 cases were reported across more than 130 health facilities in the Gaza Strip — more than half of them concentrated in Khan Younis. The outbreak is being managed as an emergency. That fact alone tells you a great deal about what is happening to public health inside Gaza's displacement system.</p>
+
+    <h2>The Numbers and Where They Came From</h2>
+
+    <p>The Health Cluster's alert was circulated to humanitarian partners on June 30, 2026, according to OCHA's Humanitarian Situation Report published on 3 July. The case count had climbed rapidly in a short window. Khan Younis, which has served as one of the primary reception areas for people displaced from northern Gaza and other conflict zones, accounted for more than half the recorded cases — a concentration that reflects both the density of displacement in the south and the particular vulnerability of populations who have moved repeatedly.</p>
+
+    <p>Partners responded with what was immediately available: antihistamines, antibiotics, and fever relievers were distributed across affected sites. Water trucking was scaled up to high-burden displacement areas. More than 100 health promoters were deployed specifically to educate communities on home management, isolation practices, and when to seek medical help early. The Health Cluster also coordinated with Site Management and WASH (Water, Sanitation and Hygiene) clusters to address overlapping environmental vulnerabilities at the highest-risk sites. These are appropriate, targeted responses — but they are responses to a surge that, in public health terms, was structurally predictable.</p>
+
+    <h2>What Made This Inevitable</h2>
+
+    <p>Chickenpox spreads through respiratory droplets and direct contact with active lesions. It is highly contagious, particularly among children who have not been vaccinated, and in normal circumstances it is manageable — unpleasant, occasionally severe in immunocompromised individuals, but not a crisis. In Gaza's displacement sites, the conditions for containment have been systematically absent for months.</p>
+
+    <p>The Gaza Strip currently hosts more than 1,600 active displacement sites. Across them, approximately 1.7 million people are living in conditions of severe overcrowding. Site Management Cluster (SMC) coverage — the presence of regular monitoring, maintenance support, and community coordination at individual sites — reaches only about 34 percent of those locations. Nearly two-thirds of displacement sites receive no regular structured support.</p>
+
+    <p>Field teams documenting conditions across assessed sites have found rodent and ectoparasite infestations in 83 percent of them. Sewage runs in streets. Solid waste accumulates without adequate collection. Standing water collects in corners and drainage channels. Water storage has become improvised: OCHA's situation report notes that many households are storing drinking water in used flour sacks lined with plastic garbage bags — not proper jerrycans or containers — because the right equipment is not available. Each of these conditions, individually, raises communicable disease risk. Together, they create what the Health Cluster itself describes as "a highly conducive environment for the spread of chickenpox and other communicable diseases."</p>
+
+    <p>Chickenpox does not behave the same way in this environment as it does in a normal one. It spreads faster, across a population already weakened by months of displacement, malnutrition, and chronic stress. The outbreak was not a matter of if. It was a matter of when the alert would be issued.</p>
+
+    <h2>Beyond the Outbreak: Dialysis Machines Going Dark at Al Shifa</h2>
+
+    <p>The chickenpox alert is one of several active health emergencies in Gaza documented in the same OCHA report. At Al Shifa Hospital in Gaza City — one of the main functioning medical facilities in the north — the Ministry of Health has reported a critical disruption to haemodialysis services. The cause is a shortage of sodium bicarbonate, a basic consumable required to operate dialysis machines. The shortage is not a supply-chain accident; it is, as the Health Cluster reports, a direct consequence of "chronic underfunding."</p>
+
+    <p>As of late June, approximately 25 of Al Shifa's 52 dialysis machines were out of service. The roughly 240 patients with end-stage kidney disease who depend on those machines are now receiving fewer and shorter sessions: two per week instead of three, three hours per session instead of four. Additional shifts have been added to partially compensate, but the clinical impact is already visible. Field reports describe increasing fatigue among patients, clinical deterioration, and elevated risk of cardiac and respiratory complications — the predictable sequelae of inadequate dialysis. The Health Cluster describes the situation as critical, with an urgent need to restore supplies before further deterioration occurs.</p>
+
+    <p>Kidney disease is not a condition that responds to improvised coping strategies. The patients in Al Shifa's dialysis unit are not in need of more health promoters or awareness campaigns. They need a consumable that costs relatively little, that is used routinely in hospitals around the world, and that has not reached them because of funding gaps and supply restrictions in a system that has been under severe strain for more than two years.</p>
+
+    <h2>Aid Volumes: A Declining Baseline</h2>
+
+    <p>Both the chickenpox surge and the dialysis disruption are unfolding against a backdrop of steadily declining humanitarian supply volumes. According to UN 2720 mechanism data, UN agencies and NGO partners offloaded approximately 41,800 pallets of aid at Kerem Shalom Crossing in June 2026. That figure is down from 46,600 in May, 49,400 in April, 47,500 in March, 54,600 in February, and 58,600 in January. Kerem Shalom remains the only operational cargo crossing for humanitarian supplies entering Gaza.</p>
+
+    <p>Among commercial cargo entering Gaza in the same period, 29 percent of truckloads carried non-essential goods — items with lower tariffs and higher profit margins in uncertain markets — while critical commodities remained systematically under-imported. In one representative week in late June, only three truckloads of medicines entered the Strip. Three truckloads of animal feed. Two truckloads of stationery. One truckload of baby care items. The 1,053 Palestinians killed and more than 3,400 injured since the October 2025 ceasefire was announced are a separate accounting. The aid volume decline is its own.</p>
+
+    <h2>What 9,300 Cases Actually Means</h2>
+
+    <p>Chickenpox is, in most of the world, a disease that public health systems have under routine management. It has not been eradicated globally, but vaccination programs, adequate sanitation, access to basic medicines, and the ability to isolate an infected child at home have made it manageable in settings where those things exist. In Gaza's displacement sites, none of those things reliably exist. Vaccination coverage has been severely disrupted by the conflict. Isolation is geometrically impossible in camps where families share tents and share airspace. Basic medicines are intermittently available depending on supply shipments that are declining month over month.</p>
+
+    <p>The Health Cluster documented the outbreak. Partners mobilized what they had. Health promoters were deployed. These are the right responses to what is immediately in front of humanitarian workers. But they are responses to a disease that should not be at emergency scale in 2026, in a strip of land where 9,300 cases in two weeks is being treated as one item on a list of multiple concurrent health crises.</p>
+
+    <p>OCHA's situation reports have documented, week after week, the environmental conditions across Gaza's displacement sites: the sewage, the rodents, the improvised water storage, the absent monitoring, the insufficient soap. The chickenpox outbreak is not a new development — it is a metric. It is what happens when those documented conditions persist long enough for a highly contagious but otherwise manageable disease to find an unimpeded path through 1.7 million people living in 1,600 sites that were not designed to be inhabited and are not being resourced as though people actually live there.</p>
+
+    <details class="id-summary">
+      <summary>Indonesian Summary</summary>
+      <p>Lebih dari 9.300 kasus cacar air (chickenpox) dilaporkan di lebih dari 130 fasilitas kesehatan di Gaza hanya dalam dua minggu — lebih dari separuhnya terkonsentrasi di Khan Younis. Wabah ini terjadi di tengah 1,7 juta orang yang menghuni lebih dari 1.600 lokasi pengungsian dengan tingkat kesesakan ekstrem, di mana 83% lokasi memiliki infestasi tikus dan ektoparasit, sanitasi yang buruk, dan penyimpanan air yang improvisa. Di Rumah Sakit Al Shifa, kekurangan natrium bikarbonat akibat pendanaan kronis yang tidak memadai menyebabkan 25 dari 52 mesin dialisis tidak berfungsi — mengancam sekitar 240 pasien gagal ginjal. Sementara itu, volume bantuan kemanusiaan yang masuk melalui penyeberangan Kerem Shalom terus merosot dari 58.600 palet pada Januari menjadi 41.800 palet pada Juni 2026. Wabah cacar air ini bukan kejutan medis — ini adalah hasil yang dapat diprediksi dari kondisi pengungsian yang telah terdokumentasi selama berbulan-bulan.</p>
+    </details>
+
+    <div class="source-box">
+      <strong>Sources</strong><br>
+      OCHA, Humanitarian Situation Report, 3 July 2026: <a href="https://www.ochaopt.org/content/humanitarian-situation-report-3-july-2026" target="_blank" rel="noopener">https://www.ochaopt.org/content/humanitarian-situation-report-3-july-2026</a><br>
+      UN News, "Expanding areas under Israeli control in Gaza increase risks to civilians," 1 July 2026: <a href="https://news.un.org/en/story/2026/07/1167852" target="_blank" rel="noopener">https://news.un.org/en/story/2026/07/1167852</a><br>
+      Image: DFID &ndash; UK Department for International Development, CC BY 2.0, via Wikimedia Commons.
+    </div>
+
+    <div class="ummanitarian-perspective">
+      <span class="perspective-label">Ummanitarian Perspective</span>
+      <p>The most revealing detail in the OCHA report may not be the 9,300 case count. It is the fact that 83 percent of assessed displacement sites have documented rodent and ectoparasite infestations, that only 34 percent of sites have regular management support, and that families are storing drinking water in used flour sacks. These are not gaps that appeared overnight. They have been documented in weekly situation reports for months. The chickenpox outbreak is those conditions producing a measurable clinical outcome — and it will not be the last one. Public health in displacement does not fail catastrophically all at once; it erodes, week after week, until one disease or another finds the opening that the cumulative neglect of basic environmental conditions has left wide open.</p>
+    </div>
+
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-text">
+    <strong style="color:var(--ink);">Ummanitarian Insight</strong> &mdash; Humanitarian knowledge, plainly told.<br>
+    A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian</a>. Follow us: <a href="https://instagram.com/ummanitarian_" style="color:var(--red);">@ummanitarian_</a>
+  </div>
+</footer>
+
+</body>
+</html>
