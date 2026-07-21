@@ -6,7 +6,7 @@
 
 | No  | Slug | Judul Singkat | Tanggal | Tipe | Produsen |
 |-----|------|---------------|---------|------|----------|
-| —   | wadem-congress-2027 | WADEM Congress 2027 Paris | — | Halaman event (tidak bernomor) | — |
+| —   | wadem-congress-2027 | WADEM Congress 2027 Paris | — | Kurasi eksternal → wadem.org/congress/paris-2027 | — |
 | 002 | gaza-water-crisis-deepens | Gaza's Water Lifeline Is Running Out | Jun 2026 | Internal (article-card) | Claude |
 | 003 | dashboard-delusion-ai-disaster-response | The Dashboard Delusion: AI and Disaster Response | Jun 2026 | Internal (article-card) | Claude |
 | 004 | blood-supply-disaster-response | One Drop of Humanity: Blood Supply Gap | Jun 2026 | Internal (article-card) | Claude |
@@ -32,3 +32,6 @@
 | 024 | apsccem-2026-bali-critical-care-symposium | 30 Years, 40 Credit Points: Asia Pacific Critical Care Convenes in Bali | Jul 2026 | Internal (article-card, injected) | Claude + Ng |
 | 025 | kyiv-largest-attack-civilian-protection | Eleven Hours Underground: Kyiv's Largest Attack and the Normalization of Civilian Harm | Jul 2026 | Internal (article-card) | Claude |
 | 026 | merapi-lahar-water-recovery-el-nino | 33 Kilometres, 4,000 Families: Merapi's Lahar Survivors Get Water Back — With El Niño on the Way | Jul 2026 | Internal (article-card) | Claude |
+| 027 | drc-ebola-response-infrastructure-collapse | Forty-Three Per Cent: The Ebola Response Infrastructure That's Being Dismantled Mid-Outbreak | Jul 2026 | Internal (article-card) | Claude |
+| 028 | gaza-chickenpox-displacement-health-crisis | Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza | Jul 2026 | Internal (article-card) | Claude |
+| 029 | europe-heatwave-heat-action-plan-gap | Fewer Than Half Had a Plan: Europe's Deadly Heatwave and the Preparedness Gap That Widened It | Jul 2026 | Internal (article-card, hero) | Claude |
