@@ -36,4 +36,5 @@
 | 028 | gaza-chickenpox-displacement-health-crisis | Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza | Jul 2026 | Internal (article-card) | Claude |
 | 029 | europe-heatwave-heat-action-plan-gap | Fewer Than Half Had a Plan: Europe's Deadly Heatwave and the Preparedness Gap That Widened It | Jul 2026 | Internal (article-card) | Claude |
 | 030 | cyclone-maila-solomon-islands-accountability | 595 Households, 14 Organisations: What Cyclone Maila's Survivors Say About the Response | Jul 2026 | Internal (article-card) | Claude |
-| 031 | west-bank-settler-displacement-movement-restrictions | Seventeen Every Day: West Bank Settler Displacement and the Movement Restrictions That Enable It | Jul 2026 | Internal (article-card, hero) | Claude |
+| 031 | west-bank-settler-displacement-movement-restrictions | Seventeen Every Day: West Bank Settler Displacement and the Movement Restrictions That Enable It | Jul 2026 | Internal (article-card) | Claude |
+| 032 | sudan-kordofan-displacement-surge-funding-gap | Sixty-Five Per Cent: Sudan's Kordofan Displacement Surges As Funding Falls Short | Jul 2026 | Internal (article-card, hero) | Claude |
