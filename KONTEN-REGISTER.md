@@ -38,3 +38,4 @@
 | 030 | cyclone-maila-solomon-islands-accountability | 595 Households, 14 Organisations: What Cyclone Maila's Survivors Say About the Response | Jul 2026 | Internal (article-card) | Claude |
 | 031 | west-bank-settler-displacement-movement-restrictions | Seventeen Every Day: West Bank Settler Displacement and the Movement Restrictions That Enable It | Jul 2026 | Internal (article-card) | Claude |
 | 032 | sudan-kordofan-displacement-surge-funding-gap | Sixty-Five Per Cent: Sudan's Kordofan Displacement Surges As Funding Falls Short | Jul 2026 | Internal (article-card, hero) | Claude |
+| 033 | afghanistan-hunger-funding-gap | Twenty-Six Per Cent: Afghanistan's Hunger Is Outrunning Its Funding | Aug 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
