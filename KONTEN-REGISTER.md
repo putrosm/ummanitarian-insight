@@ -39,3 +39,4 @@
 | 031 | west-bank-settler-displacement-movement-restrictions | Seventeen Every Day: West Bank Settler Displacement and the Movement Restrictions That Enable It | Jul 2026 | Internal (article-card) | Claude |
 | 032 | sudan-kordofan-displacement-surge-funding-gap | Sixty-Five Per Cent: Sudan's Kordofan Displacement Surges As Funding Falls Short | Jul 2026 | Internal (article-card, hero) | Claude |
 | 033 | afghanistan-hunger-funding-gap | Twenty-Six Per Cent: Afghanistan's Hunger Is Outrunning Its Funding | Aug 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 034 | iom-2025-reach-funding-gap | Seventeen Point Eight Million: IOM's 2025 Reach and the Budget That's Contracting | Aug 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
