@@ -25,6 +25,7 @@ GRID_END = "<!-- ARTICLE GRID END -->"
 HERO_BLOCK = re.compile(r"<!-- HERO START -->[\s\S]*?<!-- HERO END -->")
 CARD_RE = re.compile(r"(<!--[^>]*-->\s*)?<article class=\"article-card\"[\s\S]*?</article>", re.S)
 HEADER_TOP = '<div class="header-top">'
+HEADER_END = '<div class="header-tagline">Humanitarian knowledge, plainly told.</div>\n  </div>'
 STYLE_END = "</style>"
 BODY_END = "</body>"
 TITLE_RE = re.compile(r"<title>.*?</title>")
@@ -39,7 +40,9 @@ SEARCH_HTML = """    <div class="header-search" role="search">
 
 SEARCH_CSS = """
   /* ===== SEARCH (generated) ===== */
-  .header-search { position: relative; margin-left: auto; margin-right: 1.5rem; }
+  .header-search { position: relative; margin-left: 0; margin-right: 1.5rem; }
+  .header-top { gap: 1.5rem; }
+  .header-tagline { margin-right: auto; }
   #search-input { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; padding: 0.42rem 1rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--cream-dark); color: var(--ink); width: 210px; outline: none; transition: border-color .15s, background .15s; }
   #search-input:focus { border-color: var(--red); background: var(--cream); }
   #search-results { display: none; position: absolute; top: calc(100% + 8px); right: 0; width: min(430px, 88vw); background: var(--cream); border: 1px solid var(--rule); border-radius: 10px; box-shadow: 0 10px 30px rgba(26,20,16,.14); max-height: 70vh; overflow-y: auto; z-index: 99; }
@@ -52,7 +55,7 @@ SEARCH_CSS = """
   .sr-deck { font-size: .78rem; line-height: 1.5; color: var(--ink-light); margin-top: .25rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   .search-empty { padding: .85rem .95rem; color: var(--ink-light); font-size: .85rem; }
   /* ===== PAGINATION (generated) ===== */
-  .pagination { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.4rem 0 0; margin-top: 3rem; border-top: 1px solid var(--rule); }
+  .pagination { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.4rem 0 0; margin: 3rem 0 4rem; border-top: 1px solid var(--rule); }
   .page-numbers { display: flex; gap: .35rem; flex-wrap: wrap; }
   .page-num { min-width: 2.1rem; height: 2.1rem; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--rule); border-radius: 6px; font-size: .85rem; text-decoration: none; color: var(--ink); font-family: 'DM Sans', sans-serif; }
   .page-num.active { background: var(--red); border-color: var(--red); color: #fff; }
@@ -61,6 +64,7 @@ SEARCH_CSS = """
   .page-link.disabled { opacity: .35; pointer-events: none; }
   .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
   @media (max-width: 860px) {
+    .header-tagline { display: none; }
     #search-input { width: 118px; }
     .header-search { margin-right: .8rem; }
     .pagination { flex-wrap: wrap; justify-content: center; }
@@ -152,7 +156,7 @@ def inject_common(html_text):
     """Injeksi yang berlaku di SEMUA halaman: kotak search, CSS, script search.js.
     Idempotent — aman dijalankan berulang pada file yang sudah ter-injeksi."""
     if 'header-search' not in html_text:
-        html_text, n = re.subn(re.escape(HEADER_TOP), HEADER_TOP + "\n" + SEARCH_HTML, html_text, count=1)
+        html_text, n = re.subn(re.escape(HEADER_END), HEADER_END + "\n" + SEARCH_HTML, html_text, count=1)
         assert n == 1, "sisip search gagal"
     if '/* ===== SEARCH (generated) ===== */' not in html_text:
         html_text, n = re.subn(re.escape(STYLE_END), SEARCH_CSS + "\n" + STYLE_END, html_text, count=1)
