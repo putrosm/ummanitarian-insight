@@ -32,8 +32,8 @@
   body { background: var(--cream); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; }
 
   /* HEADER */
-  header { background: var(--cream); border-bottom: 2px solid var(--ink); padding: 0 2rem; overflow: hidden; }
-  .header-top { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.2rem 0 0.8rem; border-bottom: 1px solid var(--rule); }
+  header { background: var(--cream); border-bottom: 2px solid var(--ink); padding: 0 2rem; overflow: visible; }
+  .header-top { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.2rem 0 0.8rem; border-bottom: 1px solid var(--rule); position: relative; z-index: 20; }
   .logo-wrap { display: flex; align-items: center; gap: 1rem; }
   .site-name { display: flex; flex-direction: column; line-height: 1; }
   .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.15rem; }
@@ -293,112 +293,112 @@
   <!-- ARTICLE GRID -->
   <div class="articles-grid">
     <!-- Ex-hero: Twenty-Six Per Cent: Afghanistan's Hunger Is Outrunning Its Funding -->
-                    <article class="article-card" data-category="capacity">
-                      <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flickr_-_The_U.S._Army_-_Humanitarian_aid_in_Rajan_Kala,_Afghanistan.jpg" alt="Humanitarian aid distribution in Afghanistan">
-                      <span class="card-category">Capacity &amp; Resources &middot; Afghanistan</span>
-                      <a href="/033-afghanistan-hunger-funding-gap/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Twenty-Six Per Cent: Afghanistan's Hunger Is Outrunning Its Funding</h2>
-                      </a>
-                      <a class="card-read-more" href="/033-afghanistan-hunger-funding-gap/">Read insight &rarr;</a>
-                      <p class="card-deck">A UN-backed assessment finds malnutrition rising across Afghanistan — an estimated 21.9 million people in need — while the country's 2026 Humanitarian Response Plan stands only 26 per cent funded.</p>
-                      <div class="card-meta">August 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="capacity">
+                          <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/e/e8/Flickr_-_The_U.S._Army_-_Humanitarian_aid_in_Rajan_Kala,_Afghanistan.jpg" alt="Humanitarian aid distribution in Afghanistan">
+                          <span class="card-category">Capacity &amp; Resources &middot; Afghanistan</span>
+                          <a href="/033-afghanistan-hunger-funding-gap/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Twenty-Six Per Cent: Afghanistan's Hunger Is Outrunning Its Funding</h2>
+                          </a>
+                          <a class="card-read-more" href="/033-afghanistan-hunger-funding-gap/">Read insight &rarr;</a>
+                          <p class="card-deck">A UN-backed assessment finds malnutrition rising across Afghanistan — an estimated 21.9 million people in need — while the country's 2026 Humanitarian Response Plan stands only 26 per cent funded.</p>
+                          <div class="card-meta">August 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Sixty-Five Per Cent: Sudan's Kordofan Displacement Surges As Funding Falls Short -->
-                    <article class="article-card" data-category="field">
-                      <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Darfur_IDPs_1_camp.jpg" alt="Camp for internally displaced people in Sudan">
-                      <span class="card-category">Field Ops &middot; Sudan</span>
-                      <a href="/032-sudan-kordofan-displacement-surge-funding-gap/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Sixty-Five Per Cent: Sudan's Kordofan Displacement Surges As Funding Falls Short</h2>
-                      </a>
-                      <a class="card-read-more" href="/032-sudan-kordofan-displacement-surge-funding-gap/">Read insight &rarr;</a>
-                      <p class="card-deck">New displacement across Sudan's Kordofan region climbed from 132,000 people in February to over 219,000 by late June, IOM reports, as fighting spreads to new towns and donor funding fails to keep pace.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="field">
+                          <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Darfur_IDPs_1_camp.jpg" alt="Camp for internally displaced people in Sudan">
+                          <span class="card-category">Field Ops &middot; Sudan</span>
+                          <a href="/032-sudan-kordofan-displacement-surge-funding-gap/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Sixty-Five Per Cent: Sudan's Kordofan Displacement Surges As Funding Falls Short</h2>
+                          </a>
+                          <a class="card-read-more" href="/032-sudan-kordofan-displacement-surge-funding-gap/">Read insight &rarr;</a>
+                          <p class="card-deck">New displacement across Sudan's Kordofan region climbed from 132,000 people in February to over 219,000 by late June, IOM reports, as fighting spreads to new towns and donor funding fails to keep pace.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Seventeen Every Day: West Bank Settler Displacement -->
-                    <article class="article-card" data-category="law">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1200&q=80&fm=jpg&auto=format&fit=crop" alt="Abandoned building in an urban setting with graffiti, showing signs of conflict or displacement">
-                      <span class="card-category">Law &amp; Politics &middot; West Bank</span>
-                      <a href="/031-west-bank-settler-displacement-movement-restrictions/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Seventeen Every Day: West Bank Settler Displacement and the Movement Restrictions That Enable It</h2>
-                      </a>
-                      <a class="card-read-more" href="/031-west-bank-settler-displacement-movement-restrictions/">Read insight &rarr;</a>
-                      <p class="card-deck">Over 3,200 Palestinians have been displaced across the West Bank in 2026 by settler attacks and demolitions — an average of 17 people per day, double the rate of the preceding three years. New humanitarian assessments reveal how movement restrictions and legal barriers have become the infrastructure of an ever-narrowing humanitarian space.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="law">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=1200&q=80&fm=jpg&auto=format&fit=crop" alt="Abandoned building in an urban setting with graffiti, showing signs of conflict or displacement">
+                          <span class="card-category">Law &amp; Politics &middot; West Bank</span>
+                          <a href="/031-west-bank-settler-displacement-movement-restrictions/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Seventeen Every Day: West Bank Settler Displacement and the Movement Restrictions That Enable It</h2>
+                          </a>
+                          <a class="card-read-more" href="/031-west-bank-settler-displacement-movement-restrictions/">Read insight &rarr;</a>
+                          <p class="card-deck">Over 3,200 Palestinians have been displaced across the West Bank in 2026 by settler attacks and demolitions — an average of 17 people per day, double the rate of the preceding three years. New humanitarian assessments reveal how movement restrictions and legal barriers have become the infrastructure of an ever-narrowing humanitarian space.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <article class="article-card" data-category="field">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgq=80https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgfm=jpghttps://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgauto=formathttps://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgfit=crop" alt="Stilt houses of a coastal village on the shoreline of Malaita, Solomon Islands">
-                      <span class="card-category">Field Ops &middot; Solomon Islands</span>
-                      <a href="/030-cyclone-maila-solomon-islands-accountability/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">595 Households, 14 Organisations: What Cyclone Maila&#8217;s Survivors Say About the Response</h2>
-                      </a>
-                      <a class="card-read-more" href="/030-cyclone-maila-solomon-islands-accountability/">Read insight &rarr;</a>
-                      <p class="card-deck">Three months after Category 5 Cyclone Maila, a Pacific Humanitarian Team analysis compares what 14 organisations claim about their accountability systems with what 595 displaced households actually experienced.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgq=80https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgfm=jpghttps://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgauto=formathttps://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpg/1280px-Idyllic_villages_on_the_coast_near_Auki%2C_the_capital_of_Malaita._%2810704113825%29.jpgfit=crop" alt="Stilt houses of a coastal village on the shoreline of Malaita, Solomon Islands">
+                          <span class="card-category">Field Ops &middot; Solomon Islands</span>
+                          <a href="/030-cyclone-maila-solomon-islands-accountability/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">595 Households, 14 Organisations: What Cyclone Maila&#8217;s Survivors Say About the Response</h2>
+                          </a>
+                          <a class="card-read-more" href="/030-cyclone-maila-solomon-islands-accountability/">Read insight &rarr;</a>
+                          <p class="card-deck">Three months after Category 5 Cyclone Maila, a Pacific Humanitarian Team analysis compares what 14 organisations claim about their accountability systems with what 595 displaced households actually experienced.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <article class="article-card" data-category="climate">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=1200&q=80&fm=jpg&auto=format&fit=crop" alt="Outdoor thermometer showing extreme high temperature during a European summer heatwave">
-                      <span class="card-category">Climate &amp; Environment &middot; Europe</span>
-                      <a href="/029-europe-heatwave-heat-action-plan-gap/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Fewer Than Half Had a Plan: Europe&#8217;s Deadly Heatwave and the Preparedness Gap That Widened It</h2>
-                      </a>
-                      <a class="card-read-more" href="/029-europe-heatwave-heat-action-plan-gap/">Read insight &rarr;</a>
-                      <p class="card-deck">WHO Europe convened an emergency call with 41 member states on July 6 as another heatwave built over the Atlantic. A preliminary model puts the June wave&#8217;s excess deaths near 20,400. The sharpest finding: fewer than half of those states had a national heat-health action plan when it arrived.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1523966211575-eb4a01e7dd51?w=1200&q=80&fm=jpg&auto=format&fit=crop" alt="Outdoor thermometer showing extreme high temperature during a European summer heatwave">
+                          <span class="card-category">Climate &amp; Environment &middot; Europe</span>
+                          <a href="/029-europe-heatwave-heat-action-plan-gap/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Fewer Than Half Had a Plan: Europe&#8217;s Deadly Heatwave and the Preparedness Gap That Widened It</h2>
+                          </a>
+                          <a class="card-read-more" href="/029-europe-heatwave-heat-action-plan-gap/">Read insight &rarr;</a>
+                          <p class="card-deck">WHO Europe convened an emergency call with 41 member states on July 6 as another heatwave built over the Atlantic. A preliminary model puts the June wave&#8217;s excess deaths near 20,400. The sharpest finding: fewer than half of those states had a national heat-health action plan when it arrived.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <article class="article-card" data-category="health">
-                      <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/An_informal_tented_settlement_in_Lebanons_Bekaa_valley_%2811174052664%29.jpg" alt="Rows of white tents cover a hillside in an informal displacement settlement — the kind of overcrowded conditions that enable communicable disease spread">
-                      <span class="card-category">Health &amp; Displacement &middot; Gaza Strip</span>
-                      <a href="/028-gaza-chickenpox-displacement-health-crisis/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza</h2>
-                      </a>
-                      <a class="card-read-more" href="/028-gaza-chickenpox-displacement-health-crisis/">Read insight &rarr;</a>
-                      <p class="card-deck">When the UN&#8217;s Health Cluster raised an alert for a chickenpox surge across Gaza in late June, it was tracking 9,300 cases across more than 130 health facilities in less than two weeks. The disease is not new. The conditions that made it an emergency are.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                          <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/c/cf/An_informal_tented_settlement_in_Lebanons_Bekaa_valley_%2811174052664%29.jpg" alt="Rows of white tents cover a hillside in an informal displacement settlement — the kind of overcrowded conditions that enable communicable disease spread">
+                          <span class="card-category">Health &amp; Displacement &middot; Gaza Strip</span>
+                          <a href="/028-gaza-chickenpox-displacement-health-crisis/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Nine Thousand in Two Weeks: Chickenpox and What Displacement Does to Disease in Gaza</h2>
+                          </a>
+                          <a class="card-read-more" href="/028-gaza-chickenpox-displacement-health-crisis/">Read insight &rarr;</a>
+                          <p class="card-deck">When the UN&#8217;s Health Cluster raised an alert for a chickenpox surge across Gaza in late June, it was tracking 9,300 cases across more than 130 health facilities in less than two weeks. The disease is not new. The conditions that made it an emergency are.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Forty-Three Per Cent: The Ebola Response Infrastructure That&#8217;s Being Dismantled Mid-Outbreak -->
-                    <article class="article-card" data-category="health">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A healthcare worker in full protective equipment reviews patient data inside a clinical response setting">
-                      <span class="card-category">Health &amp; Displacement &middot; DRC</span>
-                      <a href="/027-drc-ebola-response-infrastructure-collapse/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Forty-Three Per Cent: The Ebola Response Infrastructure That&#8217;s Being Dismantled Mid-Outbreak</h2>
-                      </a>
-                      <a class="card-read-more" href="/027-drc-ebola-response-infrastructure-collapse/">Read insight &rarr;</a>
-                      <p class="card-deck">With 1,561 confirmed cases and 506 deaths across the DRC and Uganda, the largest Bundibugyo epidemic on record is accelerating &mdash; precisely as CDC defunding empties the laboratories and contact tracers that stopped sixteen previous outbreaks.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="health">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A healthcare worker in full protective equipment reviews patient data inside a clinical response setting">
+                          <span class="card-category">Health &amp; Displacement &middot; DRC</span>
+                          <a href="/027-drc-ebola-response-infrastructure-collapse/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Forty-Three Per Cent: The Ebola Response Infrastructure That&#8217;s Being Dismantled Mid-Outbreak</h2>
+                          </a>
+                          <a class="card-read-more" href="/027-drc-ebola-response-infrastructure-collapse/">Read insight &rarr;</a>
+                          <p class="card-deck">With 1,561 confirmed cases and 506 deaths across the DRC and Uganda, the largest Bundibugyo epidemic on record is accelerating &mdash; precisely as CDC defunding empties the laboratories and contact tracers that stopped sixteen previous outbreaks.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: 026-merapi-lahar-water-recovery-el-nino -->
-                    <article class="article-card" data-category="disaster">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1704287712209-888be550274d?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Mount Merapi towering over a small town on its slopes, Central Java, Indonesia">
-                      <span class="card-category">Disaster Response &middot; Central Java</span>
-                      <a href="/026-merapi-lahar-water-recovery-el-nino/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">33 Kilometres, 4,000 Families: Merapi&rsquo;s Lahar Survivors Get Water Back &mdash; With El Ni&ntilde;o on the Way</h2>
-                      </a>
-                      <a class="card-read-more" href="/026-merapi-lahar-water-recovery-el-nino/">Read insight &rarr;</a>
-                      <p class="card-deck">Four months after a lahar flood cut off water to eleven villages, Indonesia&rsquo;s national disaster agency has commissioned 33 kilometres of new pipeline &mdash; just as BMKG warns of eleven months of El Ni&ntilde;o-driven drought ahead.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="disaster">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1704287712209-888be550274d?fm=jpg&q=80&w=1200&auto=format&fit=crop" alt="Mount Merapi towering over a small town on its slopes, Central Java, Indonesia">
+                          <span class="card-category">Disaster Response &middot; Central Java</span>
+                          <a href="/026-merapi-lahar-water-recovery-el-nino/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">33 Kilometres, 4,000 Families: Merapi&rsquo;s Lahar Survivors Get Water Back &mdash; With El Ni&ntilde;o on the Way</h2>
+                          </a>
+                          <a class="card-read-more" href="/026-merapi-lahar-water-recovery-el-nino/">Read insight &rarr;</a>
+                          <p class="card-deck">Four months after a lahar flood cut off water to eleven villages, Indonesia&rsquo;s national disaster agency has commissioned 33 kilometres of new pipeline &mdash; just as BMKG warns of eleven months of El Ni&ntilde;o-driven drought ahead.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Eleven Hours Underground: Kyiv&rsquo;s Largest Attack and the Normalization of Civilian Harm -->
-                    <article class="article-card" data-category="law">
-                      <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Destructions_in_Kyiv_after_Russian_attack%2C_2023-12-13_%2835%29.jpg/1280px-Destructions_in_Kyiv_after_Russian_attack%2C_2023-12-13_%2835%29.jpg" alt="Rescue workers at a damaged residential building in Kyiv after a Russian missile attack">
-                      <span class="card-category">Law &amp; Politics &middot; Kyiv, Ukraine</span>
-                      <a href="/025-kyiv-largest-attack-civilian-protection/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Eleven Hours Underground: Kyiv&rsquo;s Largest Attack and the Normalization of Civilian Harm</h2>
-                      </a>
-                      <a class="card-read-more" href="/025-kyiv-largest-attack-civilian-protection/">Read insight &rarr;</a>
-                      <p class="card-deck">At least 21 killed, 90 injured, an ambulance station struck &mdash; and three million residents spending up to eleven hours in shelters.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="law">
+                          <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Destructions_in_Kyiv_after_Russian_attack%2C_2023-12-13_%2835%29.jpg/1280px-Destructions_in_Kyiv_after_Russian_attack%2C_2023-12-13_%2835%29.jpg" alt="Rescue workers at a damaged residential building in Kyiv after a Russian missile attack">
+                          <span class="card-category">Law &amp; Politics &middot; Kyiv, Ukraine</span>
+                          <a href="/025-kyiv-largest-attack-civilian-protection/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Eleven Hours Underground: Kyiv&rsquo;s Largest Attack and the Normalization of Civilian Harm</h2>
+                          </a>
+                          <a class="card-read-more" href="/025-kyiv-largest-attack-civilian-protection/">Read insight &rarr;</a>
+                          <p class="card-deck">At least 21 killed, 90 injured, an ambulance station struck &mdash; and three million residents spending up to eleven hours in shelters.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: 30 Years, 40 Credit Points: Asia Pacific Critical Care Convenes in Bali -->
-                    <article class="article-card" data-category="capacity">
-                      <img class="article-card-img" src="/024-apsccem-2026-bali-critical-care-symposium/og-image.jpg" alt="Official 2nd Announcement banner of the 30th Asia Pacific Symposium on Critical Care and Emergency Medicine 2026 in Bali">
-                      <span class="card-category">Capacity &amp; Resources &middot; Bali, Indonesia</span>
-                      <a href="/024-apsccem-2026-bali-critical-care-symposium/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">30 Years, 40 Credit Points: Asia Pacific Critical Care Convenes in Bali</h2>
-                      </a>
-                      <a class="card-read-more" href="/024-apsccem-2026-bali-critical-care-symposium/">Read insight &rarr;</a>
-                      <p class="card-deck">The 30th Asia Pacific Symposium on Critical Care and Emergency Medicine (APSCCEM) 2026 arrives at The Patra Bali, Kuta, July 28 &ndash; August 2 &mdash; generative AI at the bedside, teletrauma, drone-assisted response and humanitarian collaboration, three decades on.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="capacity">
+                          <img class="article-card-img" src="/024-apsccem-2026-bali-critical-care-symposium/og-image.jpg" alt="Official 2nd Announcement banner of the 30th Asia Pacific Symposium on Critical Care and Emergency Medicine 2026 in Bali">
+                          <span class="card-category">Capacity &amp; Resources &middot; Bali, Indonesia</span>
+                          <a href="/024-apsccem-2026-bali-critical-care-symposium/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">30 Years, 40 Credit Points: Asia Pacific Critical Care Convenes in Bali</h2>
+                          </a>
+                          <a class="card-read-more" href="/024-apsccem-2026-bali-critical-care-symposium/">Read insight &rarr;</a>
+                          <p class="card-deck">The 30th Asia Pacific Symposium on Critical Care and Emergency Medicine (APSCCEM) 2026 arrives at The Patra Bali, Kuta, July 28 &ndash; August 2 &mdash; generative AI at the bedside, teletrauma, drone-assisted response and humanitarian collaboration, three decades on.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
   </div>
   <!-- ARTICLE GRID END -->
 
@@ -414,6 +414,8 @@
   </div>
   <a class="page-link next" href="/page-2/" aria-label="Older articles">Older &rarr;</a>
 </nav>
+
+  
 
   
 

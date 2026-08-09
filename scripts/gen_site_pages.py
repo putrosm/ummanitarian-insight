@@ -41,7 +41,7 @@ SEARCH_HTML = """    <div class="header-search" role="search">
 SEARCH_CSS = """
   /* ===== SEARCH (generated) ===== */
   .header-search { position: relative; margin-left: 0; margin-right: 1.5rem; }
-  .header-top { gap: 1.5rem; }
+  .header-top { gap: 1.5rem; position: relative; z-index: 20; }
   .header-tagline { margin-right: auto; }
   #search-input { font-family: 'DM Sans', sans-serif; font-size: 0.82rem; padding: 0.42rem 1rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--cream-dark); color: var(--ink); width: 210px; outline: none; transition: border-color .15s, background .15s; }
   #search-input:focus { border-color: var(--red); background: var(--cream); }

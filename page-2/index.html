@@ -32,8 +32,8 @@
   body { background: var(--cream); color: var(--ink); font-family: 'Source Serif 4', Georgia, serif; }
 
   /* HEADER */
-  header { background: var(--cream); border-bottom: 2px solid var(--ink); padding: 0 2rem; overflow: hidden; }
-  .header-top { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.2rem 0 0.8rem; border-bottom: 1px solid var(--rule); }
+  header { background: var(--cream); border-bottom: 2px solid var(--ink); padding: 0 2rem; overflow: visible; }
+  .header-top { display: flex; align-items: center; justify-content: space-between; gap: 1.5rem; padding: 1.2rem 0 0.8rem; border-bottom: 1px solid var(--rule); position: relative; z-index: 20; }
   .logo-wrap { display: flex; align-items: center; gap: 1rem; }
   .site-name { display: flex; flex-direction: column; line-height: 1; }
   .site-name .label { font-family: 'DM Sans', sans-serif; font-size: 0.6rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--ink-light); margin-bottom: 0.15rem; }
@@ -237,115 +237,115 @@
     <h1 class="sr-only">Ummanitarian Insights — Page 2</h1>
   <div class="articles-grid">
     <!-- Ex-hero: 4,000 Litres at a Time: Water Bombers Over Tangerang's Burning Landfill -->
-                    <article class="article-card" data-category="disaster">
-                      <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Mi-8MSB_UR-VBC_BNPB_at_Roesmin_Nurjadin_AFB_July_2025.jpg" alt="A Mil Mi-8 helicopter used in BNPB fire-fighting operations parked at an Indonesian air base">
-                      <span class="card-category">Disaster Response &middot; Banten, Indonesia</span>
-                      <a href="/023-jatiwaringin-landfill-fire-water-bombing/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">4,000 Litres at a Time: Water Bombers Over Tangerang's Burning Landfill</h2>
-                      </a>
-                      <a class="card-read-more" href="/023-jatiwaringin-landfill-fire-water-bombing/">Read insight &rarr;</a>
-                      <p class="card-deck">A fire burning since June 30 at the 33-hectare Jatiwaringin landfill west of Jakarta has displaced around fifty residents &mdash; driven out by smoke, not flame. BNPB has deployed 4,000-litre water-bombing helicopters under a 14-day emergency declaration.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="disaster">
+                          <img class="article-card-img" src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Mi-8MSB_UR-VBC_BNPB_at_Roesmin_Nurjadin_AFB_July_2025.jpg" alt="A Mil Mi-8 helicopter used in BNPB fire-fighting operations parked at an Indonesian air base">
+                          <span class="card-category">Disaster Response &middot; Banten, Indonesia</span>
+                          <a href="/023-jatiwaringin-landfill-fire-water-bombing/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">4,000 Litres at a Time: Water Bombers Over Tangerang's Burning Landfill</h2>
+                          </a>
+                          <a class="card-read-more" href="/023-jatiwaringin-landfill-fire-water-bombing/">Read insight &rarr;</a>
+                          <p class="card-deck">A fire burning since June 30 at the 33-hectare Jatiwaringin landfill west of Jakarta has displaced around fifty residents &mdash; driven out by smoke, not flame. BNPB has deployed 4,000-litre water-bombing helicopters under a 14-day emergency declaration.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Recovery: 593 Millimetres, One Month: Inside Ghana's Worst Flooding on Record -->
-                    <article class="article-card" data-category="disaster">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1718295036672-a7ce4d9a03be?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Vehicles and buses navigating a flooded city street after heavy rainfall">
-                      <span class="card-category">Disaster Response &middot; Accra, Ghana</span>
-                      <a href="/022-ghana-accra-record-floods-response/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">593 Millimetres, One Month: Inside Ghana's Worst Flooding on Record</h2>
-                      </a>
-                      <a class="card-read-more" href="/022-ghana-accra-record-floods-response/">Read insight &rarr;</a>
-                      <p class="card-deck">Ghana recorded its highest monthly rainfall in history in June 2026, killing at least 12 people and displacing nearly 39,000 in Greater Accra alone — while a $7 million flood-alert system sat not yet switched on.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="disaster">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1718295036672-a7ce4d9a03be?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Vehicles and buses navigating a flooded city street after heavy rainfall">
+                          <span class="card-category">Disaster Response &middot; Accra, Ghana</span>
+                          <a href="/022-ghana-accra-record-floods-response/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">593 Millimetres, One Month: Inside Ghana's Worst Flooding on Record</h2>
+                          </a>
+                          <a class="card-read-more" href="/022-ghana-accra-record-floods-response/">Read insight &rarr;</a>
+                          <p class="card-deck">Ghana recorded its highest monthly rainfall in history in June 2026, killing at least 12 people and displacing nearly 39,000 in Greater Accra alone — while a $7 million flood-alert system sat not yet switched on.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Nineteen Videos, One Massacre: Amnesty's Case Against the RSF in El Fasher -->
-                    <article class="article-card" data-category="law">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1535253868107-da56da1693db?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Armed men carrying rifles in Sudan">
-                      <span class="card-category">Law &amp; Politics &middot; El Fasher, Sudan</span>
-                      <a href="/021-el-fasher-rsf-war-crimes-report/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Nineteen Videos, One Massacre: Amnesty's Case Against the RSF in El Fasher</h2>
-                      </a>
-                      <a class="card-read-more" href="/021-el-fasher-rsf-war-crimes-report/">Read insight &rarr;</a>
-                      <p class="card-deck">A new Amnesty International report concludes the RSF committed crimes against humanity and ethnic cleansing during its eighteen-month siege of El Fasher, built on 45 survivor interviews and 19 verified videos of mass executions.</p>
-                      <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="law">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1535253868107-da56da1693db?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Armed men carrying rifles in Sudan">
+                          <span class="card-category">Law &amp; Politics &middot; El Fasher, Sudan</span>
+                          <a href="/021-el-fasher-rsf-war-crimes-report/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Nineteen Videos, One Massacre: Amnesty's Case Against the RSF in El Fasher</h2>
+                          </a>
+                          <a class="card-read-more" href="/021-el-fasher-rsf-war-crimes-report/">Read insight &rarr;</a>
+                          <p class="card-deck">A new Amnesty International report concludes the RSF committed crimes against humanity and ethnic cleansing during its eighteen-month siege of El Fasher, built on 45 survivor interviews and 19 verified videos of mass executions.</p>
+                          <div class="card-meta">July 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: 44 Teams, 27 Countries: Venezuela&#39;s Twin Earthquakes -->
-                    <article class="article-card" data-category="disaster">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1650638727175-347f9f3a83c8?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Rescue workers and civilians gather beside a partially collapsed multi-story building in the aftermath of the Venezuela earthquake">
-                      <span class="card-category">Disaster Response &middot; Venezuela</span>
-                      <a href="/020-venezuela-earthquake-usar-response/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">44 Teams, 27 Countries: Venezuela's Twin Earthquakes and the Race to Pull People From the Rubble</h2>
-                      </a>
-                      <a class="card-read-more" href="/020-venezuela-earthquake-usar-response/">Read insight &rarr;</a>
-                      <p class="card-deck">Twin earthquakes of magnitudes 7.2 and 7.5 struck northern Venezuela on 24 June 2026, killing more than 1,400 people. What followed was the largest international urban search-and-rescue deployment in the country&#39;s history — into a nation already running on empty.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="disaster">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1650638727175-347f9f3a83c8?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Rescue workers and civilians gather beside a partially collapsed multi-story building in the aftermath of the Venezuela earthquake">
+                          <span class="card-category">Disaster Response &middot; Venezuela</span>
+                          <a href="/020-venezuela-earthquake-usar-response/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">44 Teams, 27 Countries: Venezuela's Twin Earthquakes and the Race to Pull People From the Rubble</h2>
+                          </a>
+                          <a class="card-read-more" href="/020-venezuela-earthquake-usar-response/">Read insight &rarr;</a>
+                          <p class="card-deck">Twin earthquakes of magnitudes 7.2 and 7.5 struck northern Venezuela on 24 June 2026, killing more than 1,400 people. What followed was the largest international urban search-and-rescue deployment in the country&#39;s history — into a nation already running on empty.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Thirty Days Without Rain: Lombok Barat&#39;s Clean Water Emergency -->
-                    <article class="article-card" data-category="climate">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1637179709448-e03199d05f6e?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Vast dry landscape stretching to the horizon under a blazing sun — the visual signature of prolonged drought">
-                      <span class="card-category">Climate &amp; Environment &middot; Lombok Barat, Indonesia</span>
-                      <a href="/019-lombok-barat-drought-clean-water-crisis/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Thirty Days Without Rain: Lombok Barat&#39;s Clean Water Emergency</h2>
-                      </a>
-                      <a class="card-read-more" href="/019-lombok-barat-drought-clean-water-crisis/">Read insight &rarr;</a>
-                      <p class="card-deck">One month without rain has left 4,245 families across five subdistricts of Lombok Barat, West Nusa Tenggara, scrambling for clean water.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="climate">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1637179709448-e03199d05f6e?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Vast dry landscape stretching to the horizon under a blazing sun — the visual signature of prolonged drought">
+                          <span class="card-category">Climate &amp; Environment &middot; Lombok Barat, Indonesia</span>
+                          <a href="/019-lombok-barat-drought-clean-water-crisis/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Thirty Days Without Rain: Lombok Barat&#39;s Clean Water Emergency</h2>
+                          </a>
+                          <a class="card-read-more" href="/019-lombok-barat-drought-clean-water-crisis/">Read insight &rarr;</a>
+                          <p class="card-deck">One month without rain has left 4,245 families across five subdistricts of Lombok Barat, West Nusa Tenggara, scrambling for clean water.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Four Million Daily: Syria's Bread Lifeline Has Been Cut -->
-                    <article class="article-card" data-category="health">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1762858376497-567882c99f3a?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Freshly baked bread loaves in a Syrian bakery">
-                      <span class="card-category">Health &amp; Displacement &middot; Syria</span>
-                      <a href="/018-syria-wfp-bread-subsidy-hunger-funding/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Four Million Daily: Syria&#39;s Bread Lifeline Has Been Cut</h2>
-                      </a>
-                      <a class="card-read-more" href="/018-syria-wfp-bread-subsidy-hunger-funding/">Read insight &rarr;</a>
-                      <p class="card-deck">WFP halted the nationwide bread subsidy that kept subsidised loaves within reach for four million Syrians — while the 2026 humanitarian appeal sits at just 20% funded and 7.2 million people remain acutely food insecure.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="health">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1762858376497-567882c99f3a?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Freshly baked bread loaves in a Syrian bakery">
+                          <span class="card-category">Health &amp; Displacement &middot; Syria</span>
+                          <a href="/018-syria-wfp-bread-subsidy-hunger-funding/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Four Million Daily: Syria&#39;s Bread Lifeline Has Been Cut</h2>
+                          </a>
+                          <a class="card-read-more" href="/018-syria-wfp-bread-subsidy-hunger-funding/">Read insight &rarr;</a>
+                          <p class="card-deck">WFP halted the nationwide bread subsidy that kept subsidised loaves within reach for four million Syrians — while the 2026 humanitarian appeal sits at just 20% funded and 7.2 million people remain acutely food insecure.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: One Strike, One Blackout: How El Obeid Lost Its Hospitals in a Week -->
-                    <article class="article-card" data-category="health">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1639945314262-0592de4f92c8?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Two healthcare workers wearing protective face masks in a clinical setting">
-                      <span class="card-category">Health &amp; Displacement &middot; North Kordofan, Sudan</span>
-                      <a href="/017-sudan-north-kordofan-healthcare-drone-attacks-cholera/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">One Strike, One Blackout: How El Obeid Lost Its Hospitals in a Week</h2>
-                      </a>
-                      <a class="card-read-more" href="/017-sudan-north-kordofan-healthcare-drone-attacks-cholera/">Read insight &rarr;</a>
-                      <p class="card-deck">RSF drone strikes on El Obeid's power grid in June 2026 forced dialysis centres and emergency departments to close. Next door in West Kordofan, cholera has already killed 60 people.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="health">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1639945314262-0592de4f92c8?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Two healthcare workers wearing protective face masks in a clinical setting">
+                          <span class="card-category">Health &amp; Displacement &middot; North Kordofan, Sudan</span>
+                          <a href="/017-sudan-north-kordofan-healthcare-drone-attacks-cholera/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">One Strike, One Blackout: How El Obeid Lost Its Hospitals in a Week</h2>
+                          </a>
+                          <a class="card-read-more" href="/017-sudan-north-kordofan-healthcare-drone-attacks-cholera/">Read insight &rarr;</a>
+                          <p class="card-deck">RSF drone strikes on El Obeid's power grid in June 2026 forced dialysis centres and emergency departments to close. Next door in West Kordofan, cholera has already killed 60 people.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: 557 Then 172: Boalemo's Floods Keep Finding the Same Houses -->
-                    <article class="article-card" data-category="climate">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1741081038901-f258dd2f5a1c?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Floodwater submerging a residential neighborhood in Indonesia after heavy rainfall">
-                      <span class="card-category">Climate &amp; Environment &middot; Boalemo, Indonesia</span>
-                      <a href="/016-boalemo-gorontalo-recurring-flood-risk/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">557 Then 172: Boalemo's Floods Keep Finding the Same Houses</h2>
-                      </a>
-                      <a class="card-read-more" href="/016-boalemo-gorontalo-recurring-flood-risk/">Read insight &rarr;</a>
-                      <p class="card-deck">A flash flood swept through three sub-districts in Boalemo, Gorontalo on June 18, displacing 486 people — the same villages BNPB recorded flooding fourteen months earlier. The water always recedes by nightfall. The reason it keeps returning has not.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="climate">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1741081038901-f258dd2f5a1c?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Floodwater submerging a residential neighborhood in Indonesia after heavy rainfall">
+                          <span class="card-category">Climate &amp; Environment &middot; Boalemo, Indonesia</span>
+                          <a href="/016-boalemo-gorontalo-recurring-flood-risk/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">557 Then 172: Boalemo's Floods Keep Finding the Same Houses</h2>
+                          </a>
+                          <a class="card-read-more" href="/016-boalemo-gorontalo-recurring-flood-risk/">Read insight &rarr;</a>
+                          <p class="card-deck">A flash flood swept through three sub-districts in Boalemo, Gorontalo on June 18, displacing 486 people — the same villages BNPB recorded flooding fourteen months earlier. The water always recedes by nightfall. The reason it keeps returning has not.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: 62 Casualties Before Noon — Nabatiyeh Hospitals Under Siege -->
-                    <article class="article-card" data-category="health">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1758653500534-a47f6cd8abb0?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Medical staff transporting a patient on a stretcher down a hospital corridor">
-                      <span class="card-category">Health &amp; Displacement &middot; Southern Lebanon</span>
-                      <a href="/015-nabatiyeh-lebanon-hospitals-under-siege/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege</h2>
-                      </a>
-                      <a class="card-read-more" href="/015-nabatiyeh-lebanon-hospitals-under-siege/">Read insight &rarr;</a>
-                      <p class="card-deck">On June 19, a single hospital in southern Lebanon took in 25 dead and 37 wounded within hours. It is one entry in a WHO tally of 147 documented attacks on Lebanese healthcare since March — and the doctors treating the wounded have not left the building in weeks.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="health">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1758653500534-a47f6cd8abb0?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Medical staff transporting a patient on a stretcher down a hospital corridor">
+                          <span class="card-category">Health &amp; Displacement &middot; Southern Lebanon</span>
+                          <a href="/015-nabatiyeh-lebanon-hospitals-under-siege/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">62 Casualties Before Noon: Inside Nabatiyeh's Hospitals Under Siege</h2>
+                          </a>
+                          <a class="card-read-more" href="/015-nabatiyeh-lebanon-hospitals-under-siege/">Read insight &rarr;</a>
+                          <p class="card-deck">On June 19, a single hospital in southern Lebanon took in 25 dead and 37 wounded within hours. It is one entry in a WHO tally of 147 documented attacks on Lebanese healthcare since March — and the doctors treating the wounded have not left the building in weeks.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
         <!-- Ex-hero: Ten Years, 1.6 Million Patients — Nduta Camp Closure -->
-                    <article class="article-card" data-category="health">
-                      <img class="article-card-img" src="https://images.unsplash.com/photo-1677682693111-c7c6a60c362a?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A mother holds her baby on a hospital bed in Africa">
-                      <span class="card-category">Health &amp; Displacement &middot; Tanzania</span>
-                      <a href="/014-nduta-camp-closure-burundian-refugees/" style="text-decoration:none;color:inherit;">
-                        <h2 class="card-headline" style="cursor:pointer;">Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists</h2>
-                      </a>
-                      <a class="card-read-more" href="/014-nduta-camp-closure-burundian-refugees/">Read insight &rarr;</a>
-                      <p class="card-deck">An international medical charity has wound down a decade of medical care in Tanzania's Nduta refugee camp, following the camp's shutdown by government order amid allegations that Burundian refugees were coerced into returning home.</p>
-                      <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
-                    </article>
+                        <article class="article-card" data-category="health">
+                          <img class="article-card-img" src="https://images.unsplash.com/photo-1677682693111-c7c6a60c362a?fm=jpg&q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.1.0" alt="A mother holds her baby on a hospital bed in Africa">
+                          <span class="card-category">Health &amp; Displacement &middot; Tanzania</span>
+                          <a href="/014-nduta-camp-closure-burundian-refugees/" style="text-decoration:none;color:inherit;">
+                            <h2 class="card-headline" style="cursor:pointer;">Ten Years, 1.6 Million Patients, and a Camp That No Longer Exists</h2>
+                          </a>
+                          <a class="card-read-more" href="/014-nduta-camp-closure-burundian-refugees/">Read insight &rarr;</a>
+                          <p class="card-deck">An international medical charity has wound down a decade of medical care in Tanzania's Nduta refugee camp, following the camp's shutdown by government order amid allegations that Burundian refugees were coerced into returning home.</p>
+                          <div class="card-meta">June 2026 &middot; Ummanitarian Insight</div>
+                        </article>
   </div>
   <!-- ARTICLE GRID END -->
 
@@ -361,6 +361,8 @@
   </div>
   <a class="page-link next" href="/page-3/" aria-label="Older articles">Older &rarr;</a>
 </nav>
+
+  
 
   
 
