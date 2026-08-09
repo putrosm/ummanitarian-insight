@@ -149,11 +149,14 @@ def assert_anchor(html_text, anchor, label):
 
 
 def inject_common(html_text):
-    """Injeksi yang berlaku di SEMUA halaman: kotak search, CSS, script search.js."""
-    html_text, n = re.subn(re.escape(HEADER_TOP), HEADER_TOP + "\n" + SEARCH_HTML, html_text, count=1)
-    assert n == 1, "sisip search gagal"
-    html_text, n = re.subn(re.escape(STYLE_END), SEARCH_CSS + "\n" + STYLE_END, html_text, count=1)
-    assert n == 1, "sisip CSS gagal"
+    """Injeksi yang berlaku di SEMUA halaman: kotak search, CSS, script search.js.
+    Idempotent — aman dijalankan berulang pada file yang sudah ter-injeksi."""
+    if 'header-search' not in html_text:
+        html_text, n = re.subn(re.escape(HEADER_TOP), HEADER_TOP + "\n" + SEARCH_HTML, html_text, count=1)
+        assert n == 1, "sisip search gagal"
+    if '/* ===== SEARCH (generated) ===== */' not in html_text:
+        html_text, n = re.subn(re.escape(STYLE_END), SEARCH_CSS + "\n" + STYLE_END, html_text, count=1)
+        assert n == 1, "sisip CSS gagal"
     if '<script src="/search.js"></script>' not in html_text:
         html_text, n = re.subn(re.escape(BODY_END), '<script src="/search.js"></script>\n' + BODY_END, html_text, count=1)
         assert n == 1, "sisip script gagal"
@@ -216,6 +219,8 @@ def main():
         pag = pagination_nav(current, total)
         if not pag:
             return html_text
+        # buang pagination lama dulu (idempotent), lalu sisip yang baru
+        html_text, _ = re.subn(r"<!-- PAGINATION -->[\s\S]*?</nav>", "", html_text, count=1)
         html_text, n = re.subn(r"(" + re.escape(GRID_END) + r")", r"\1\n\n  <!-- PAGINATION -->\n" + pag, html_text, count=1)
         assert n == 1, f"sisip pagination page {current} gagal"
         return html_text
