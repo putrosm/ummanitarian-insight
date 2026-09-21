@@ -41,4 +41,5 @@
 | 033 | afghanistan-hunger-funding-gap | Twenty-Six Per Cent: Afghanistan's Hunger Is Outrunning Its Funding | Aug 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
 | 034 | iom-2025-reach-funding-gap | Seventeen Point Eight Million: IOM's 2025 Reach and the Budget That's Contracting | Aug 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 035 | anak-krakatau-ash-reaches-cianjur | Fifty Thousand Feet of Ash: Anak Krakatau's Eruption Reaches Cianjur | Sep 2026 | Internal (article-card) | Hermes (Staf Mesin) |
-| 036 | climate-change-disease-map-shift | Seven Per Cent: How Climate Change Is Redrawing Indonesia's Disease Map | Sep 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 036 | climate-change-disease-map-shift | Seven Per Cent: How Climate Change Is Redrawing Indonesia's Disease Map | Sep 2026 | Internal (article-card) | Hermes (Staf Mesin) |
+| 037 | sar-unhas-40-years-wanadri-competency-standard | Seventy-Seven Operations, Forty Years: What Student-Led Disaster Response Looks Like in Indonesia | Sep 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
