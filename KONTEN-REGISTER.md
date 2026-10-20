@@ -43,4 +43,5 @@
 | 035 | anak-krakatau-ash-reaches-cianjur | Fifty Thousand Feet of Ash: Anak Krakatau's Eruption Reaches Cianjur | Sep 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 036 | climate-change-disease-map-shift | Seven Per Cent: How Climate Change Is Redrawing Indonesia's Disease Map | Sep 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 037 | sar-unhas-40-years-wanadri-competency-standard | Seventy-Seven Operations, Forty Years: What Student-Led Disaster Response Looks Like in Indonesia | Sep 2026 | Internal (article-card) | Hermes (Staf Mesin) |
-| 038 | yemen-taiz-market-strike-verification-gap | Seven Killed, Forty Wounded, Two Accounts: Yemen's Market Strike and the Verification Gap | Oct 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 038 | yemen-taiz-market-strike-verification-gap | Seven Killed, Forty Wounded, Two Accounts: Yemen's Market Strike and the Verification Gap | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
+| 039 | 039-global-health-diplomacy-programme-2027-geneva | Twelve Months, No Tuition: Geneva Opens Its Health Diplomacy Programme to Applicants Outside Switzerland | Oct 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
