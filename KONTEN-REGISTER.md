@@ -46,4 +46,4 @@
 | 038 | yemen-taiz-market-strike-verification-gap | Seven Killed, Forty Wounded, Two Accounts: Yemen's Market Strike and the Verification Gap | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 039 | 039-global-health-diplomacy-programme-2027-geneva | Twelve Months, No Tuition: Geneva Opens Its Health Diplomacy Programme to Applicants Outside Switzerland | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 040 | 040-naza-documentary-casualty-number-gaza | Fifteen NAZA: A Documentary Puts a Number on the Civilians an Airstrike Is Expected to Kill | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
-| 041 | 041-naza-acronym-turns-civilians-into-number | Twenty-Four Testimonies: The Acronym That Turns Civilians Into a Number | Oct 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 041 | 041-why-can-ordinary-people-massacre | Why Can Ordinary People Massacre and Still Feel Righteous? | Oct 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
