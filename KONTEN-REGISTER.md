@@ -47,4 +47,5 @@
 | 039 | 039-global-health-diplomacy-programme-2027-geneva | Twelve Months, No Tuition: Geneva Opens Its Health Diplomacy Programme to Applicants Outside Switzerland | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 040 | 040-naza-documentary-casualty-number-gaza | Fifteen NAZA: A Documentary Puts a Number on the Civilians an Airstrike Is Expected to Kill | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 041 | 041-why-can-ordinary-people-massacre | Why Can Ordinary People Massacre and Still Feel Righteous? | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
-| 042 | 042-protecting-doctors-smoke-and-attacks | Seventy-Six Years: Why Is Doctors' Day Also a Humanitarian Question? | Oct 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 042 | 042-protecting-doctors-smoke-and-attacks | Seventy-Six Years: Why Is Doctors' Day Also a Humanitarian Question? | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
+| 043 | 043-thirty-three-countries-seventy-two-hours | Thirty-Three Countries, Seventy-Two Hours: Warning Sign or Standard Procedure? | Nov 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
