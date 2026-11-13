@@ -50,4 +50,5 @@
 | 042 | 042-protecting-doctors-smoke-and-attacks | Seventy-Six Years: Why Is Doctors' Day Also a Humanitarian Question? | Oct 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 043 | 043-thirty-three-countries-seventy-two-hours | Thirty-Three Countries, Seventy-Two Hours: Warning Sign or Standard Procedure? | Nov 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 044 | 044-yemen-taiz-cut-off-hospitals | Nearly Three Hundred Thousand Displaced, Twelve Hospitals Left: Why Is Yemen Off the Agenda? | Nov 2026 | Internal (article-card) | Hermes (Staf Mesin) |
-| 045 | 045-indonesia-humanitarian-workforce-gap | Four Per Cent Funded, One Team Certified: Why Is Local Capacity Still Rented? | Nov 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 045 | 045-indonesia-humanitarian-workforce-gap | Four Per Cent Funded, One Team Certified: Why Is Local Capacity Still Rented? | Nov 2026 | Internal (article-card) | Hermes (Staf Mesin) |
+| 046 | 046-tembagapura-twelve-hours-health-workers | Twelve Hours, Twelve Rivers: Why Are 136 Clinics Still Short of Staff? | Nov 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
