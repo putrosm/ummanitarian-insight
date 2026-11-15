@@ -52,3 +52,4 @@
 | 044 | 044-yemen-taiz-cut-off-hospitals | Nearly Three Hundred Thousand Displaced, Twelve Hospitals Left: Why Is Yemen Off the Agenda? | Nov 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 045 | 045-indonesia-humanitarian-workforce-gap | Four Per Cent Funded, One Team Certified: Why Is Local Capacity Still Rented? | Nov 2026 | Internal (article-card) | Hermes (Staf Mesin) |
 | 046 | 046-tembagapura-twelve-hours-health-workers | Twelve Hours, Twelve Rivers: Why Are 136 Clinics Still Short of Staff? | Nov 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
+| 047 | 047-palestine-declaration-rainy-season-gaza | Forty Thousand Shelters, Thirty-Eight Years: What Does the Declaration Mean in a Flooded Tent? | Nov 2026 | Internal (article-card, hero) | Hermes (Staf Mesin) |
