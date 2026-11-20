@@ -71,6 +71,32 @@
   .carousel-track img { width: 100%; height: auto; display: block; border: 1px solid var(--rule); }
   .carousel-track figcaption { font-family: 'DM Sans', sans-serif; font-size: 0.6rem; color: var(--ink-light); margin-top: 0.4rem; letter-spacing: 0.08em; }
   .carousel-note { font-family: 'DM Sans', sans-serif; font-size: 0.68rem; color: var(--ink-light); margin-top: 0.3rem; line-height: 1.5; }
+
+  /* in-article gallery + lightbox */
+  .ig-gallery { margin: 2.2rem 0 2.2rem; }
+  .ig-gal-head { display: flex; justify-content: space-between; align-items: baseline; border-top: 2px solid var(--ink); padding-top: 0.7rem; margin-bottom: 0.8rem; }
+  .ig-gal-kicker { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); }
+  .ig-gal-count { font-family: 'DM Sans', sans-serif; font-size: 0.68rem; color: var(--ink-light); }
+  .ig-gal-viewport { overflow: hidden; border: 1px solid var(--rule); background: #fff; }
+  .ig-gal-track { display: flex; transition: transform 0.35s ease; will-change: transform; }
+  .ig-gal-slide { flex: 0 0 100%; margin: 0; }
+  .ig-gal-slide img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; display: block; cursor: zoom-in; }
+  .ig-gal-slide figcaption { font-family: 'DM Sans', sans-serif; font-size: 0.65rem; color: var(--ink-light); font-style: italic; padding: 0.6rem 0.8rem 0.8rem; line-height: 1.5; }
+  .ig-gal-nav { display: flex; align-items: center; gap: 0.5rem; margin-top: 0.7rem; }
+  .ig-gal-btn { font-family: 'DM Sans', sans-serif; font-size: 0.95rem; line-height: 1; padding: 0.5rem 0.8rem; border: 1px solid var(--ink); background: #fff; color: var(--ink); cursor: pointer; border-radius: 2px; }
+  .ig-gal-btn:hover { background: var(--red); color: #fff; border-color: var(--red); }
+  .ig-gal-hint { font-family: 'DM Sans', sans-serif; font-size: 0.62rem; color: var(--ink-light); margin-left: 0.3rem; }
+  .carousel-track img { cursor: zoom-in; }
+  #lb { position: fixed; inset: 0; z-index: 9999; background: rgba(12,12,12,0.94); display: none; align-items: center; justify-content: center; }
+  #lb[open], #lb.on { display: flex; }
+  #lb img { max-width: 94vw; max-height: 86vh; object-fit: contain; display: block; }
+  #lb .lb-bar { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 1.1rem; font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: #EDEAE4; letter-spacing: 0.06em; }
+  #lb button { font-family: 'DM Sans', sans-serif; background: none; border: 1px solid rgba(255,255,255,0.4); color: #fff; font-size: 1rem; padding: 0.45rem 0.8rem; cursor: pointer; border-radius: 2px; }
+  #lb button:hover { background: var(--red); border-color: var(--red); }
+  #lb .lb-nav { position: absolute; top: 50%; transform: translateY(-50%); display: flex; gap: 0.6rem; width: 100%; justify-content: space-between; padding: 0 1rem; pointer-events: none; }
+  #lb .lb-nav button { pointer-events: auto; font-size: 1.3rem; }
+  #lb .lb-cap { position: absolute; bottom: 1rem; left: 1.1rem; right: 1.1rem; font-family: 'DM Sans', sans-serif; font-size: 0.68rem; color: #C9C4BC; text-align: center; }
+  @media (max-width: 640px) { .ig-gal-hint { display: none; } }
 </style>
 </head>
 <body>
@@ -130,8 +156,33 @@
           <div class="article-page-body">
     <p>A meme circulating this week contrasts two men and two sets of United Nations resolutions: Saddam Hussein, it says, breached two resolutions and was removed by force, while Israeli prime ministers have breached far more and face no penalty. The claim is political, but the underlying question can be answered with dates. What the Security Council records is not one standard applied twice. It is two speeds.</p>
     <p>Iraq invaded Kuwait on 2 August 1990. The Council demanded withdrawal the same day in resolution 660. Four days later, on 6 August, resolution 661 imposed a comprehensive sanctions regime: an embargo on trade, an assets freeze, a ban on financial transfers. On 29 November 1990, one hundred and nineteen days after the invasion, resolution 678 authorised member states to use "all necessary means" to restore international peace and security. Sanctions in four days, force authorisation in under four months.</p>
-    <img class="article-page-img" src="/048-security-council-two-speeds/resolution-room.jpg" alt="The Security Council chamber at United Nations Headquarters in New York">
-    <p class="img-caption">The Security Council chamber at UN Headquarters in New York, photographed in September 2024. Photo: Jdforrester / Wikimedia Commons, CC BY 4.0.</p>
+    <figure class="ig-gallery" data-gallery>
+      <div class="ig-gal-head">
+        <span class="ig-gal-kicker">In pictures</span>
+        <span class="ig-gal-count" data-count>1 / 3</span>
+      </div>
+      <div class="ig-gal-viewport">
+        <div class="ig-gal-track" data-track>
+          <figure class="ig-gal-slide">
+            <img src="/048-security-council-two-speeds/galeri-1-markas-pbb.jpg" alt="The United Nations Headquarters on the East River in New York" loading="lazy" data-zoom>
+            <figcaption>The United Nations Headquarters on the East River, New York, October 2023. Photo: Jakub Ha&#322;un / Wikimedia Commons, CC BY 4.0.</figcaption>
+          </figure>
+          <figure class="ig-gal-slide">
+            <img src="/048-security-council-two-speeds/galeri-2-ruang-dk.jpg" alt="The Security Council chamber seen from the public gallery" loading="lazy" data-zoom>
+            <figcaption>The Security Council chamber, seen head-on. Fifteen members sit here, five of them permanent. Photo: Jdforrester / Wikimedia Commons, CC BY 4.0.</figcaption>
+          </figure>
+          <figure class="ig-gal-slide">
+            <img src="/048-security-council-two-speeds/galeri-3-sidang-umum.jpg" alt="The General Assembly Hall at UN Headquarters" loading="lazy" data-zoom>
+            <figcaption>The General Assembly Hall, where every member state has one vote and no veto. Photo: Basil D Soufi / Wikimedia Commons, CC BY-SA 3.0.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <div class="ig-gal-nav">
+        <button type="button" class="ig-gal-btn" data-prev aria-label="Previous picture">&#8592;</button>
+        <button type="button" class="ig-gal-btn" data-next aria-label="Next picture">&#8594;</button>
+        <span class="ig-gal-hint">Geser atau tekan panah. Ketuk gambar untuk memperbesar.</span>
+      </div>
+    </figure>
     <p>The parallel record on Israeli settlements begins earlier and ends differently. Resolution 446, adopted on 22 March 1979, determined that settlements in the occupied territories had no legal validity. Resolution 465, adopted unanimously on 1 March 1980, called on Israel to dismantle existing settlements and halt new ones. Resolution 2334, adopted on 23 December 2016 by 14 votes to none, restated that settlements violate international law. All three were adopted without sanctions, without an enforcement mechanism, and without any authorisation of force. From resolution 446 to today is forty-seven years.</p>
     <p>The Gaza file follows the same instrument. Resolution 2712, on 15 November 2023, called for humanitarian pauses; it passed with 12 votes while Russia, the United Kingdom and the United States abstained. Resolution 2720, on 22 December 2023, demanded the opening of all crossings for aid and the appointment of a senior humanitarian coordinator. Then, on 17 November 2025, resolution 2803 gave effect to the peace plan agreed by Israel and Hamas in October 2025. Adopted with 13 votes in favour while China and Russia abstained, it endorses the plan, welcomes a Board of Peace, authorises the deployment of an International Stabilization Force and allows a National Committee to administer Gaza. It was welcomed by the Palestinian Authority and denounced by Hamas. The text contains no sanctions and no authorisation for the use of force.</p>
     <p>The consequences are counted elsewhere. OCHA reported that between the October 2025 ceasefire agreement and 9 November 2026, Gaza's health ministry recorded 1,613 Palestinians killed and 5,833 injured. Heavy rain from 6 November flooded shelters used by an estimated 226,000 people. Around 42 per cent of essential medicines and 55 per cent of chemotherapy medicines were at zero stock in October. In the West Bank, demolitions displaced 150 Palestinians in a single week and 410 settler attacks linked to the olive harvest were recorded since 1 September.</p>
@@ -142,27 +193,27 @@
       <p class="carousel-kicker">In six frames</p>
       <div class="carousel-track">
         <figure>
-          <img src="/048-security-council-two-speeds/carousel/slide-01.jpg" alt="Frame 1: four days from invasion to sanctions" loading="lazy">
+          <img data-zoom src="/048-security-council-two-speeds/carousel/slide-01.jpg" alt="Frame 1: four days from invasion to sanctions" loading="lazy">
           <figcaption>1 / 6</figcaption>
         </figure>
         <figure>
-          <img src="/048-security-council-two-speeds/carousel/slide-02.jpg" alt="Frame 2: 119 days from invasion to authorisation of force" loading="lazy">
+          <img data-zoom src="/048-security-council-two-speeds/carousel/slide-02.jpg" alt="Frame 2: 119 days from invasion to authorisation of force" loading="lazy">
           <figcaption>2 / 6</figcaption>
         </figure>
         <figure>
-          <img src="/048-security-council-two-speeds/carousel/slide-03.jpg" alt="Frame 3: forty-seven years of settlement resolutions" loading="lazy">
+          <img data-zoom src="/048-security-council-two-speeds/carousel/slide-03.jpg" alt="Frame 3: forty-seven years of settlement resolutions" loading="lazy">
           <figcaption>3 / 6</figcaption>
         </figure>
         <figure>
-          <img src="/048-security-council-two-speeds/carousel/slide-04.jpg" alt="Frame 4: resolution 2334 passed 14 to none" loading="lazy">
+          <img data-zoom src="/048-security-council-two-speeds/carousel/slide-04.jpg" alt="Frame 4: resolution 2334 passed 14 to none" loading="lazy">
           <figcaption>4 / 6</figcaption>
         </figure>
         <figure>
-          <img src="/048-security-council-two-speeds/carousel/slide-05.jpg" alt="Frame 5: 1,613 killed since the October 2025 ceasefire" loading="lazy">
+          <img data-zoom src="/048-security-council-two-speeds/carousel/slide-05.jpg" alt="Frame 5: 1,613 killed since the October 2025 ceasefire" loading="lazy">
           <figcaption>5 / 6</figcaption>
         </figure>
         <figure>
-          <img src="/048-security-council-two-speeds/carousel/slide-06.jpg" alt="Frame 6: resolutions that read the same and behave differently" loading="lazy">
+          <img data-zoom src="/048-security-council-two-speeds/carousel/slide-06.jpg" alt="Frame 6: resolutions that read the same and behave differently" loading="lazy">
           <figcaption>6 / 6</figcaption>
         </figure>
       </div>
@@ -196,6 +247,87 @@
     A knowledge platform by <a href="https://ummanitarian.org" style="color:var(--red);">Ummanitarian</a>. Follow us: <a href="https://instagram.com/ummanitarian_" style="color:var(--red);">@ummanitarian_</a>
   </div>
 </footer>
+
+<div id="lb" role="dialog" aria-modal="true" aria-label="Enlarged image">
+  <div class="lb-bar"><span class="lb-count">1 / 1</span><button type="button" data-close aria-label="Close">Tutup</button></div>
+  <div class="lb-nav"><button type="button" data-prev aria-label="Previous">&#8592;</button><button type="button" data-next aria-label="Next">&#8594;</button></div>
+  <img src="" alt="">
+  <div class="lb-cap">Ketuk di luar gambar atau tekan Esc untuk menutup.</div>
+</div>
+
+<script>
+(function () {
+  // ---- galeri geser
+  document.querySelectorAll('[data-gallery]').forEach(function (g) {
+    var track = g.querySelector('[data-track]');
+    var slides = g.querySelectorAll('.ig-gal-slide');
+    var count = g.querySelector('[data-count]');
+    var i = 0;
+    function go(n) {
+      i = Math.max(0, Math.min(slides.length - 1, n));
+      track.style.transform = 'translateX(' + (-i * 100) + '%)';
+      if (count) count.textContent = (i + 1) + ' / ' + slides.length;
+    }
+    g.querySelector('[data-prev]').addEventListener('click', function () { go(i - 1); });
+    g.querySelector('[data-next]').addEventListener('click', function () { go(i + 1); });
+    // geser dengan jari
+    var x0 = null;
+    track.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; }, { passive: true });
+    track.addEventListener('touchend', function (e) {
+      if (x0 === null) return;
+      var dx = e.changedTouches[0].clientX - x0;
+      if (Math.abs(dx) > 40) go(i + (dx < 0 ? 1 : -1));
+      x0 = null;
+    }, { passive: true });
+    // keyboard saat fokus di galeri
+    g.setAttribute('tabindex', '0');
+    g.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') go(i - 1);
+      if (e.key === 'ArrowRight') go(i + 1);
+    });
+  });
+
+  // ---- lightbox
+  var lb = document.getElementById('lb');
+  if (!lb) return;
+  var lbImg = lb.querySelector('img');
+  var lbCount = lb.querySelector('.lb-count');
+  var group = [], idx = 0;
+  function collect(img) {
+    var scope = img.closest('[data-gallery]') || img.closest('.carousel-track');
+    var imgs = scope ? Array.prototype.slice.call(scope.querySelectorAll('img')) : [img];
+    return { imgs: imgs, i: imgs.indexOf(img) };
+  }
+  function show() {
+    var img = group[idx];
+    if (!img) return;
+    lbImg.src = img.currentSrc || img.src;
+    lbImg.alt = img.alt || '';
+    if (lbCount) lbCount.textContent = (idx + 1) + ' / ' + group.length;
+  }
+  function open(img) {
+    var c = collect(img); group = c.imgs; idx = c.i < 0 ? 0 : c.i;
+    lb.classList.add('on'); show(); document.body.style.overflow = 'hidden';
+  }
+  function close() { lb.classList.remove('on'); document.body.style.overflow = ''; }
+  function step(d) { if (!group.length) return; idx = (idx + d + group.length) % group.length; show(); }
+
+  document.addEventListener('click', function (e) {
+    var img = e.target.closest('img[data-zoom]') || e.target.closest('.carousel-track img');
+    if (img) { e.preventDefault(); open(img); }
+  });
+  lb.querySelector('[data-close]').addEventListener('click', close);
+  lb.querySelector('[data-prev]').addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
+  lb.querySelector('[data-next]').addEventListener('click', function (e) { e.stopPropagation(); step(1); });
+  lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+  document.addEventListener('keydown', function (e) {
+    if (!lb.classList.contains('on')) return;
+    if (e.key === 'Escape') close();
+    if (e.key === 'ArrowLeft') step(-1);
+    if (e.key === 'ArrowRight') step(1);
+  });
+})();
+</script>
 
 </body>
 </html>
