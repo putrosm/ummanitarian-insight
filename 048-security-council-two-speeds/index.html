@@ -87,15 +87,15 @@
   .ig-gal-btn:hover { background: var(--red); color: #fff; border-color: var(--red); }
   .ig-gal-hint { font-family: 'DM Sans', sans-serif; font-size: 0.62rem; color: var(--ink-light); margin-left: 0.3rem; }
   .carousel-track img { cursor: zoom-in; }
-  #lb { position: fixed; inset: 0; z-index: 9999; background: rgba(12,12,12,0.94); display: none; align-items: center; justify-content: center; }
+  #lb { position: fixed; inset: 0; z-index: 9999; background: #0B0B0C; display: none; align-items: center; justify-content: center; }
   #lb[open], #lb.on { display: flex; }
-  #lb img { max-width: 94vw; max-height: 86vh; object-fit: contain; display: block; }
-  #lb .lb-bar { position: absolute; top: 0; left: 0; right: 0; display: flex; justify-content: space-between; align-items: center; padding: 0.9rem 1.1rem; font-family: 'DM Sans', sans-serif; font-size: 0.72rem; color: #EDEAE4; letter-spacing: 0.06em; }
+  #lb img { max-width: 96vw; max-height: 72vh; object-fit: contain; display: block; margin-top: 2.2rem; touch-action: pan-y; }
+  #lb .lb-bar { position: absolute; top: 0; left: 0; right: 0; z-index: 3; display: flex; justify-content: space-between; align-items: center; padding: 0.7rem 1rem; background: #0B0B0C; border-bottom: 1px solid #232323; font-family: 'DM Sans', sans-serif; font-size: 0.75rem; color: #EDEAE4; letter-spacing: 0.06em; }
   #lb button { font-family: 'DM Sans', sans-serif; background: none; border: 1px solid rgba(255,255,255,0.4); color: #fff; font-size: 1rem; padding: 0.45rem 0.8rem; cursor: pointer; border-radius: 2px; }
   #lb button:hover { background: var(--red); border-color: var(--red); }
-  #lb .lb-nav { position: absolute; top: 50%; transform: translateY(-50%); display: flex; gap: 0.6rem; width: 100%; justify-content: space-between; padding: 0 1rem; pointer-events: none; }
-  #lb .lb-nav button { pointer-events: auto; font-size: 1.3rem; }
-  #lb .lb-cap { position: absolute; bottom: 1rem; left: 1.1rem; right: 1.1rem; font-family: 'DM Sans', sans-serif; font-size: 0.68rem; color: #C9C4BC; text-align: center; }
+  #lb .lb-nav { position: absolute; top: 50%; transform: translateY(-50%); display: flex; gap: 0.6rem; width: 100%; justify-content: space-between; padding: 0 0.6rem; pointer-events: none; z-index: 4; }
+  #lb .lb-nav button { pointer-events: auto; font-size: 1.2rem; width: 46px; height: 46px; border-radius: 50%; background: rgba(0,0,0,0.55); border: 1px solid rgba(255,255,255,0.55); color: #fff; }
+  #lb .lb-cap { position: absolute; bottom: 0.8rem; left: 1rem; right: 1rem; font-family: 'DM Sans', sans-serif; font-size: 0.7rem; color: #A9A49C; text-align: center; }
   @media (max-width: 640px) { .ig-gal-hint { display: none; } }
 </style>
 </head>
@@ -159,17 +159,13 @@
     <figure class="ig-gallery" data-gallery>
       <div class="ig-gal-head">
         <span class="ig-gal-kicker">In pictures</span>
-        <span class="ig-gal-count" data-count>1 / 3</span>
+        <span class="ig-gal-count" data-count>1 / 2</span>
       </div>
       <div class="ig-gal-viewport">
         <div class="ig-gal-track" data-track>
           <figure class="ig-gal-slide">
             <img src="/048-security-council-two-speeds/galeri-saddam-ditangkap.jpg" alt="Saddam Hussein photographed after his capture near Tikrit in December 2003" loading="lazy" data-zoom>
             <figcaption>Saddam Hussein photographed after his capture near Tikrit, 13 December 2003. Photo: U.S. Navy / Wikimedia Commons, public domain.</figcaption>
-          </figure>
-          <figure class="ig-gal-slide">
-            <img src="/048-security-council-two-speeds/galeri-saddam-sidang.jpg" alt="Saddam Hussein at his first court appearance in Baghdad, July 2004" loading="lazy" data-zoom>
-            <figcaption>Saddam Hussein at his first court appearance in Baghdad, 1 July 2004. Photo: D. Myles Cullen / U.S. Air Force / Wikimedia Commons, public domain.</figcaption>
           </figure>
           <figure class="ig-gal-slide">
             <img src="/048-security-council-two-speeds/galeri-netanyahu.jpg" alt="Benjamin Netanyahu photographed in February 2023" loading="lazy" data-zoom>
@@ -252,7 +248,7 @@
   <div class="lb-bar"><span class="lb-count">1 / 1</span><button type="button" data-close aria-label="Close">Tutup</button></div>
   <div class="lb-nav"><button type="button" data-prev aria-label="Previous">&#8592;</button><button type="button" data-next aria-label="Next">&#8594;</button></div>
   <img src="" alt="">
-  <div class="lb-cap">Ketuk di luar gambar atau tekan Esc untuk menutup.</div>
+  <div class="lb-cap">Geser kiri atau kanan untuk pindah gambar. Ketuk di luar gambar untuk menutup.</div>
 </div>
 
 <script>
@@ -316,6 +312,20 @@
     var img = e.target.closest('img[data-zoom]') || e.target.closest('.carousel-track img');
     if (img) { e.preventDefault(); open(img); }
   });
+  // geser dengan jari di lightbox
+  var lx0 = null, ly0 = null;
+  lb.addEventListener('touchstart', function (e) {
+    if (e.touches.length !== 1) return;
+    lx0 = e.touches[0].clientX; ly0 = e.touches[0].clientY;
+  }, { passive: true });
+  lb.addEventListener('touchend', function (e) {
+    if (lx0 === null) return;
+    var dx = e.changedTouches[0].clientX - lx0;
+    var dy = e.changedTouches[0].clientY - ly0;
+    if (Math.abs(dx) > 35 && Math.abs(dx) > Math.abs(dy)) step(dx < 0 ? 1 : -1);
+    lx0 = null; ly0 = null;
+  }, { passive: true });
+
   lb.querySelector('[data-close]').addEventListener('click', close);
   lb.querySelector('[data-prev]').addEventListener('click', function (e) { e.stopPropagation(); step(-1); });
   lb.querySelector('[data-next]').addEventListener('click', function (e) { e.stopPropagation(); step(1); });
